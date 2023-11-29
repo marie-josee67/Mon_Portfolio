@@ -9,6 +9,6 @@ sources:
     vidéo HTML arrêt :    28:04
                         1:11:19
 
-    video CSS arrêt  : 
+    video CSS arrêt  :  1:10:29
 
     video JS arrêt   : 
