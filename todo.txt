@@ -2,5 +2,7 @@ sources:
 
     https://www.youtube.com/watch?v=zH_kk8ZzeFo
 
+    https://picsum.photos/600/400?random=1 ==> liens images fictifs aléatoire avec taille définit.
+
     arrêt : 28:04
             1:11:19
