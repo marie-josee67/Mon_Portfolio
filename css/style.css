@@ -1,3 +1,6 @@
+
+/* ** Travail sur la taille d'un mobile et convertir pour les grands écrans c'est la bonne pratique actuel. ** */
+
 /* ************************************************************************ Base ************************************************************************ */
 /* ==> cible tous les éléments du site */
 *{
@@ -7,7 +10,7 @@
 }
 
 html{
-    font-size: 62.5%; /* cela redéfinit la font-size de base à 10px */
+    font-size: 62.5%; /* cela redéfinit la font-size de base à 10px soit 1rem */
 }
 
 body{
@@ -15,6 +18,136 @@ body{
     font-size: 1.6rem; /* = 16px */
     color: #555;
     margin: 0;
+    text-align: center;
+    font-family: 'Noto Serif', serif; /* typo choisit récupérer sur le site directement */
+
 }
 
+a{ 
+    text-decoration: none;
+}
+
+/*  class utilitaire qui retire les puces des listes */
+.list-unstyled{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding:1rem 2rem;
+}
+
+.d-flex{
+    display: flex; /*  les élemeents se mette les uns à coter des autres */
+    align-content: center;
+    justify-content:space-between;
+}
+
+/* pour les écrans et ceux qui on une taille minimal de 750px */
+@media screen and (min-width:750px){
+    .container{
+        max-width: 1800px; /* Normalement = 1200px Pour que le site ne s'étire pas à l'infini sur les très grands écrans ( PC portable 1800px)*/
+        margin: 0 auto;
+        padding:2rem;
+    }
+}
+
+
 /* ************************************************************************ Sections ************************************************************************ */
+
+header{
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    /*border: 2px dashed red;*/
+}
+
+.logo{
+    font-family: Nabla; /* typo choisit récupérer sur le site directement */
+    font-size: 2.5rem;
+    letter-spacing: 2px; /* espace entre les lettres */
+}
+
+.navbar{
+    display: none;
+}
+
+.burger{
+    background: none;
+    border:none;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor:pointer;
+    position: relative;
+    margin-left: 1rem;
+}
+
+/* **** Création des barres du burger **** */
+.burger .bar{
+    display: block;
+    width: 2.2rem;
+    height: 0.3rem;
+    background: #eee;
+}
+
+.burger .bar::before, .burger .bar::after{
+    display: block;
+    content:"";
+    width: 2.2rem;
+    height: 0.3rem;
+    background: #333;
+    position: absolute;
+}
+
+/* *** barre du milieu *** */
+.burger .bar::before{
+    transform:translateY(1.5rem);
+}
+
+/* *** barre du bas *** */
+.burger .bar::after{
+    transform:translateY(3rem);
+}
+
+/*  info mettre les max-width avant les min-width. Les max-width vont du plus grand au plus petit et le min-whdth c'est l'inverse. */
+@media screen and (min-width:750px) {
+    .navbar{
+        display: flex;
+    }
+
+    .burger{
+        display: none;
+    }
+}
+
+.header li{
+    display: inline-flex; /* en ligne */
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.header a{
+    color: #333;
+}
+
+/*  change la couleur au passage de la souris */
+/*.header a:hover{
+    color: green;
+}*/
+
+.header .right{
+    display: flex;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+}
+
+.socials a {
+    padding: 0 0.2rem;
+}
+
+.socials .icon{
+    height: 1.8rem;
+}
