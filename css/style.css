@@ -18,8 +18,26 @@ body{
     font-size: 1.6rem; /* = 16px */
     color: #555;
     margin: 0;
-    font-family: 'Noto Serif', serif; /* typo choisit récupérer sur le site directement */
+    font-family: 'Poppins', sans-serif; /* typo choisit récupérer sur le site directement */
 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    font-family: 'Noto Serif', serif;
+}
+
+h1,.h1{
+    font-size: 3.1rem;
+}
+
+h2, .h2{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+h3, .h3{
+    font-size: 2.1rem;
 }
 
 a{ 
@@ -74,6 +92,11 @@ img{
 
 section{
     padding: 5.5rem 0;
+}
+
+section-title{
+    margin-top: 0;
+    font-size: 3.8rem;
 }
 
 header{
@@ -177,11 +200,12 @@ header{
 
 .hero{
     background: rgba(91, 214, 219, 0.932);
-    color: black;
+    color: aliceblue;
     padding: 1rem 0 0 0;
 }
 
 .hero .title{
+    color: inherit; /* hérite la couleur de son parent */
     font-size: 4rem;
     margin:1rem 0 0 0;
     text-align: center;
