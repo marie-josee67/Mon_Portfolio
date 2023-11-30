@@ -27,6 +27,11 @@ a{
     text-decoration: none;
 }
 
+/* taille max des images sur téléphone */
+img{
+    max-width: 100%;
+}
+
 /*  class utilitaire qui retire les puces des listes */
 .list-unstyled{
     list-style: none;
@@ -57,8 +62,8 @@ a{
 /* ************************************************************************ Sections ************************************************************************ */
 
 header{
-    background: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #7a0e0e;
+    background: rgb(114, 221, 157);
     /*border: 2px dashed red;*/
 }
 
@@ -70,6 +75,7 @@ header{
 
 .navbar{
     display: none;
+
 }
 
 .burger{
@@ -87,7 +93,7 @@ header{
     display: block;
     width: 2.2rem;
     height: 0.3rem;
-    background: #eee;
+    background: #333;
 }
 
 .burger .bar::before, .burger .bar::after{
@@ -127,7 +133,7 @@ header{
 }
 
 .header a{
-    color: #333;
+    color: black;
 }
 
 /*  change la couleur au passage de la souris */
@@ -150,4 +156,23 @@ header{
 
 .socials .icon{
     height: 1.8rem;
+}
+
+/* ***************************************************** Hero **************************************************** */
+
+.hero{
+    background: rgba(91, 214, 219, 0.932);
+    color: black;
+}
+
+@media screen and (min-width:750px) {
+  
+}
+
+.sujet{
+    
+}
+
+@media screen and (min-width:750px) {
+  
 }
