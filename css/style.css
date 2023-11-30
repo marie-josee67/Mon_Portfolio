@@ -18,7 +18,6 @@ body{
     font-size: 1.6rem; /* = 16px */
     color: #555;
     margin: 0;
-    text-align: center;
     font-family: 'Noto Serif', serif; /* typo choisit récupérer sur le site directement */
 
 }
@@ -30,6 +29,7 @@ a{
 /* taille max des images sur téléphone */
 img{
     max-width: 100%;
+    height: auto;
 }
 
 /*  class utilitaire qui retire les puces des listes */
@@ -44,9 +44,20 @@ img{
 }
 
 .d-flex{
-    display: flex; /*  les élemeents se mette les uns à coter des autres */
+    display: flex; /*  les élements se mette les uns à coter des autres */
     align-content: center;
     justify-content:space-between;
+}
+
+/* pour les différentes grilles du site */
+.grid{
+    display: flex;
+    flex-wrap: wrap; /* si les éléments dépassent ils vont à la ligne suivante */
+    align-items: center;
+}
+
+.grid__item{
+    width: 100%;
 }
 
 /* pour les écrans et ceux qui on une taille minimal de 750px */
@@ -60,6 +71,10 @@ img{
 
 
 /* ************************************************************************ Sections ************************************************************************ */
+
+section{
+    padding: 5.5rem 0;
+}
 
 header{
     border-bottom: 1px solid #7a0e0e;
@@ -163,13 +178,62 @@ header{
 .hero{
     background: rgba(91, 214, 219, 0.932);
     color: black;
+    padding: 1rem 0 0 0;
 }
 
+.hero .title{
+    font-size: 4rem;
+    margin:1rem 0 0 0;
+    text-align: center;
+}
+
+.hero__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__item span{
+    text-transform: uppercase; /* met le texte en majuscule */
+}
+
+.hero .grid{
+    justify-content: center;
+}
+
+/* petit écran seulement*/
+@media screen and (max-width:749px) {
+    /* sens espace entre les deux elle sont au même niveau et non parent, enfant. */
+    .hero__item.left{
+        order:2 /* ordre de passage dans le flux */
+    }
+    .hero__item.right{
+        order:1
+    }
+}
+
+/* grand écran seulement */
 @media screen and (min-width:750px) {
-  
+    .hero__item{
+        /* rassemble trois propriétés */
+        flex: 1 0 50%;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .hero__avatar img{
+        max-width: 400px;
+        border-radius: 50%;
+    }
+
+    .hero .title{
+        font-size: 5rem;
+        text-align: left;
+    }
 }
 
-.sujet{
+.sujet .suivant{
     
 }
 
