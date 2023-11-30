@@ -9,7 +9,6 @@ sources:
     vidéo HTML arrêt :    28:04
                         1:11:19
 
-    video CSS arrêt  :  1:10:29
-                        1:42:56
+    video CSS arrêt  :  1:52:57
 
     video JS arrêt   : 
