@@ -134,7 +134,6 @@ header{
 
 .navbar{
     display: none;
-
 }
 
 .burger{
@@ -424,7 +423,7 @@ header{
     margin-bottom: 0;
 }
 
-/* onglet famille des projets */
+/* onglet familles des projets */
 .portfolio-filters a{
     color:#333;
     /*background: #eee;*/
@@ -435,15 +434,19 @@ header{
     padding: 1rem;
 }
 
+/* pour quand on click sur une famille de projet */
+.portfolio-filters a.active{
+    background: #5b6c78;
+    color:aliceblue;
+}
+
 /* grand écran */
 @media screen and (min-width:750px) {
-
     .portfolio .grid{
         /* taille des 4 onglet de projets */
         /*max-width: 80%;*/
         margin: auto;
     }
-
     /* rajout de portfolio ul et portfolio li par rappot à la vidéo pour adapter au bug */
     .portfolio ul{
         /* taille des 4 onglet de projets */
@@ -453,11 +456,9 @@ header{
     }
 
     .portfolio li{
-        /* taille des 4 onglet de projets */
         display: flex;
         margin: 0;
         width: 25%;
-        /*border: solid 2px red;/*
     }
 }
 
@@ -469,5 +470,7 @@ header{
 }
 
 @media screen and (min-width:750px) {
-    
+    .coucou{
+        flex-wrap: wrap;
+    }
 }
