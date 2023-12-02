@@ -368,9 +368,7 @@ header{
         max-width: 50%;
         margin:0;
         /*border: solid 2px red;*/
-
     }
-
 }
 
 /* ***************************************************** Mes compétences**************************************************** */
@@ -378,7 +376,6 @@ header{
 /* ***** grille de gauche **** */
 .skills h4, .skills p{
     margin: 0 0 0.3rem 0;
-
 }
 
 .skills li {
@@ -386,7 +383,6 @@ header{
     /*border-left: 0.3rem solid rgb(91, 107,120);*/
     border-left: 0.4rem solid rgb(30, 212, 218);
     padding: .9rem 2rem;
-
 }
 
 @media screen and (min-width:750px) {
@@ -473,4 +469,5 @@ header{
 }
 
 @media screen and (min-width:750px) {
-
+    
+}
