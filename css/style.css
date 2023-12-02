@@ -216,7 +216,7 @@ header{
 /* ***************************************************** Hero **************************************************** */
 
 .hero{
-    background: rgba(91, 214, 219, 0.932);
+    background: rgba(102, 216, 220);
     color: aliceblue;
     padding: 1rem 0 0 0;
 }
@@ -313,7 +313,7 @@ header{
 /* ***************************************************** Services **************************************************** */
 
 .services{
-    background: rgba(91, 214, 219, 0.932);
+    background: rgba(102, 216, 220);
     /*color: aliceblue;*/
 }
 
@@ -340,6 +340,7 @@ header{
     margin-bottom: 0;
 }
 
+/* pour petit écran */
 @media screen and (max-width:749px) {
     .service{
         text-align: center;
@@ -350,6 +351,7 @@ header{
     }
 }
 
+/* pour grand écran */
 @media screen and (min-width:750px) {
     .service{
         display: flex;
@@ -358,6 +360,13 @@ header{
 
     .service__icon{
         margin-right: 2rem;
+    }
+
+    .services .grid__item {
+        max-width: 50%;
+        margin:0;
+        /*border: solid 2px red;*/
+
     }
 
 }
