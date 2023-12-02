@@ -324,7 +324,7 @@ header{
     justify-content: center;
     width: 9rem;
     height: 9rem;
-    border: solid 2px #5b6c78;
+    border: solid 2px rgb(75, 169, 172);
     border-radius: 50%;
 }
 
@@ -417,10 +417,57 @@ header{
     padding:1rem;
 }
 
+/* ***************************************************** Portfolio **************************************************** */
+
+.portfolio{
+    background: rgba(102, 216, 220);
+}
+
+.portfolio .grid__item{
+    max-width: 50%;
+    margin-bottom: 0;
+}
+
+.portfolio-filters a{
+    color:#333;
+    /*background: #eee;*/
+    background: rgb(75, 169, 172);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* grand écran */
+@media screen and (min-width:750px) {
+
+    .portfolio .grid{
+        /* taille des 4 onglet de projets */
+        /*max-width: 80%;*/
+        margin: auto;
+    }
+/* rajout de portfolio ul et portfolio li */
+    .portfolio ul{
+        /* taille des 4 onglet de projets */
+        display: flex;
+        margin: 0;
+        /*border: solid 2px blue;*/
+    }
+
+    .portfolio li{
+        /* taille des 4 onglet de projets */
+        display: flex;
+        margin: 0;
+        width: 25%;
+        /*border: solid 2px red;/*
+    }
+}
+
 /* ***************************************************** suivante **************************************************** */
 
 .sujet .suivant{
-    background: rgba(91, 214, 219, 0.932);
+    background: rgba(102, 216, 220);
+
 }
 
 @media screen and (min-width:750px) {
