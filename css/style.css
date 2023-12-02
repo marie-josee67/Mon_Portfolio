@@ -419,6 +419,12 @@ header{
 }
 
 .portfolio .grid__item{
+    max-width: 33.3333%;
+    /*margin-bottom: 0;*/
+    margin: 0;
+}
+
+.portfolio-filters .grid__item{
     max-width: 50%;
     margin-bottom: 0;
 }
@@ -436,31 +442,36 @@ header{
 
 /* pour quand on click sur une famille de projet */
 .portfolio-filters a.active{
-    background: #5b6c78;
+    background: rgb(19, 151, 155);
     color:aliceblue;
+}
+
+/* petit écran */
+@media screen and (max-width:749px) {
+    .portfolio .grid__item a{
+        font-size: 1.4rem;
+    }
 }
 
 /* grand écran */
 @media screen and (min-width:750px) {
-    .portfolio .grid{
+    .portfolio-filters .grid__item{
         /* taille des 4 onglet de projets */
         /*max-width: 80%;*/
-        margin: auto;
-    }
-    /* rajout de portfolio ul et portfolio li par rappot à la vidéo pour adapter au bug */
-    .portfolio ul{
-        /* taille des 4 onglet de projets */
         display: flex;
+        max-width: 25%;
         margin: 0;
-        /*border: solid 2px blue;*/
+        /*border: solid 2px red;*/
     }
 
-    .portfolio li{
-        display: flex;
-        margin: 0;
-        width: 25%;
-    }
 }
+
+ /* card */
+.card{
+
+}
+
+
 
 /* ***************************************************** suivante **************************************************** */
 
