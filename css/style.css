@@ -428,6 +428,7 @@ header{
     margin-bottom: 0;
 }
 
+/* onglet famille des projets */
 .portfolio-filters a{
     color:#333;
     /*background: #eee;*/
@@ -446,7 +447,8 @@ header{
         /*max-width: 80%;*/
         margin: auto;
     }
-/* rajout de portfolio ul et portfolio li */
+
+    /* rajout de portfolio ul et portfolio li par rappot à la vidéo pour adapter au bug */
     .portfolio ul{
         /* taille des 4 onglet de projets */
         display: flex;
@@ -471,5 +473,4 @@ header{
 }
 
 @media screen and (min-width:750px) {
-  
-}
+
