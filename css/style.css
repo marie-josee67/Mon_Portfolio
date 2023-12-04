@@ -664,7 +664,7 @@ footer .socials a{
     height: 4.2rem;
     display: flex;
     justify-content: center;
-    transform: all 1s;
+    transform: all .4s;
 }
 
 footer .socials a:hover{
@@ -673,7 +673,7 @@ footer .socials a:hover{
 }
 
 @media screen and (min-width:750px) {
-    /*footer{
+    footer{
         text-align: left;
         border: solid 2px rgb(139, 25, 174);
     }
@@ -681,7 +681,7 @@ footer .socials a:hover{
     footer .grid__item{
         max-width:33.333%;
         border: solid 2px red;
-    }*/
+    }
 }
 
 /* ***************************************** Surplus ****************************************** */
