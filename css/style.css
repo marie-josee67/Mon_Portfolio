@@ -12,9 +12,11 @@
     --white-bg-1:rgba(102, 216, 220);
     --white-color-1:rgb(75, 169, 172);
     --white-color-2:rgb(19, 151, 155);
-    --white-border:rgb(30, 212, 218);
     --white-color-3:#eee;
+    --white-border:rgb(30, 212, 218);
+    --white-border-boutton:#7a0e0e;
 } 
+
 /* pour mettre les couleurs sur les éléments faire ctrl + f mettre la couleur vouluent
 puis flèche du bas remplacer, mettre la variable vouluent ensuite remplacer tous. */
 
@@ -126,7 +128,6 @@ li{
     }
 }
 
-
 /* ************************************************************************ Sections ************************************************************************ */
 
 section{
@@ -151,7 +152,7 @@ section{
 
 .header{
     background: var(--white-bg-nav);
-    border-bottom: 1px solid #7a0e0e;
+    border-bottom: 1px solid --white-border-boutton;
     /* la position sticky permet de fixer la bar de navigation ici avec une taille directement auto directement par défault */
     position: sticky;
     top: 0;
@@ -369,7 +370,6 @@ section{
     /*border: solid 1px blue;*/
   }
 }
-
 
 /* ***************************************************** Services **************************************************** */
 
