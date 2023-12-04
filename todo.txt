@@ -1,3 +1,7 @@
+Objectif: Créer un portfolio en regardant des vidéos d'une chaine youtube précise.(Dgoe Dev)
+Qui va me permettre d'apprendre en pratiquent des langages de programmations
+,puis le modifier pour l'adapter à mes envies et mon profil.
+
 sources:
 
     https://www.youtube.com/watch?v=zH_kk8ZzeFo ==> vidéo HTML
@@ -16,5 +20,6 @@ sources:
     video CSS arrêt  :  1:52:57
                         2:13:44
                         2:28:32
+                        2:53:04
 
     video JS arrêt   : 
