@@ -470,6 +470,13 @@ section{
     margin: 0;
 }
 
+/* class rajouter pour palier le bug */
+.portfolio .grid_1{
+    max-width: 70%; /* 33.3333% dans la vidéo */
+    margin: 2rem;
+    /*border: solid 2px red;*/
+}
+
 .portfolio-filters .grid__item{
     max-width: 50%;
     margin-bottom: 0;
@@ -505,13 +512,16 @@ section{
         /* taille des 4 onglet de projets */
         /*max-width: 80%;*/
         display: flex;
-        /*max-width: 25%;*/
+        max-width: 25%;
         margin: 0;
         /*border: solid 2px red;*/
     }
 
-    .portfolio .grid__item{
+    /* class rajouter pour palier le bug */
+    .portfolio .grid_1{
         max-width: 25%; /* 33.3333% dans la vidéo */
+        margin: 2rem;
+        /*border: solid 2px red;*/
     }
 }
 
@@ -645,7 +655,7 @@ footer .socials li{
 }
 
 footer .socials a{
-    /*color: aliceblue;*/
+    color: aliceblue;
     /*border: solid 2px #fff;*/
     border: solid 2px black;
     border-radius: 50%;
