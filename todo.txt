@@ -6,6 +6,10 @@ sources:
 
     https://fonts.google.com/noto/specimen/Noto+Serif?preview.text=Ll1&preview.size=44 ==> typographie
 
+    https://developer.mozilla.org/fr/docs/Web/CSS/outline ==> curseur passe sur le formulaire
+
+    https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow ==> ombre des cartes projets
+
     vidéo HTML arrêt :    28:04
                         1:11:19
 

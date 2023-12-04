@@ -52,6 +52,10 @@ img{
     height: auto;
 }
 
+ul{
+    padding-left: 2rem;
+}
+
 li{
     margin-bottom: 1rem;
 }
@@ -505,6 +509,8 @@ section{
     background: aliceblue;
     text-transform: uppercase;
     position: relative; /* Parent */
+    box-shadow: 10px 5px 5px 1px rgb(19, 151, 155);
+    border: 1px solid #eee;
 }
 
 .card__inner{
@@ -543,7 +549,7 @@ section{
 
 /* formulaire */
 .form{
-    max-width: 80rem;
+    max-width: 60rem;
     margin: 4rem auto 0 auto;
 }
 
@@ -595,11 +601,63 @@ section{
 
 footer{
     background: rgba(102, 216, 220);
+    /*background: #000;
+    color: #eee;*/
+    text-align: center;
+    font-size: 1.4rem;
+    border: solid 2px gold;
+}
 
+footer .grid__item{
+    max-width: 33.333%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer .grid{
+    align-items: center;
+}
+
+footer .socials{
+    text-align: center;
+    justify-content: center;
+}
+
+footer .socials li{
+    padding: 0.7rem;
+}
+
+footer .socials a{
+    color: aliceblue;
+    /*border: solid 2px #fff;*/
+    border: solid 2px black;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials a:hover{
+    color: black;
+    background: aliceblue;
 }
 
 @media screen and (min-width:750px) {
-    .coucou{
-        flex-wrap: wrap;
+    /*footer{
+        text-align: left;
+        border: solid 2px rgb(139, 25, 174);
     }
+
+    footer .grid__item{
+        max-width:33.333%;
+        border: solid 2px red;
+    }*/
 }
