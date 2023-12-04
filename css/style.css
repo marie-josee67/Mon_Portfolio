@@ -14,7 +14,9 @@
     --white-color-2:rgb(19, 151, 155);
     --white-border:rgb(30, 212, 218);
     --white-color-3:#eee;
-}
+} 
+/* pour mettre les couleurs sur les éléments faire ctrl + f mettre la couleur vouluent
+puis flèche du bas remplacer, mettre la variable vouluent ensuite remplacer tous. */
 
 /* ==> cible tous les éléments du site */
 *{
