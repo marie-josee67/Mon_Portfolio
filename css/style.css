@@ -659,7 +659,7 @@ footer .socials a{
     /*border: solid 2px #fff;*/
     border: solid 2px black;
     border-radius: 50%;
-    padding: 1rem;
+    /*padding: 1rem;*/
     width: 4.2rem;
     height: 4.2rem;
     display: flex;
