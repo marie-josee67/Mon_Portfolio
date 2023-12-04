@@ -339,7 +339,7 @@ section{
     /*border: solid 1px red;*/
   }
   /* manque dans le code d'origine réponse trouver dans les commentaires */
-  .grid__item{
+  .about .grid__item{
     max-width: 50%;
     margin-left: 10rem;
     /*border: solid 1px purple;*/
@@ -505,15 +505,14 @@ section{
         /* taille des 4 onglet de projets */
         /*max-width: 80%;*/
         display: flex;
-        max-width: 25%;
+        /*max-width: 25%;*/
         margin: 0;
         /*border: solid 2px red;*/
     }
 
     .portfolio .grid__item{
-        max-width: 33.3333%;
+        max-width: 25%; /* 33.3333% dans la vidéo */
     }
-
 }
 
  /* card */
@@ -646,7 +645,7 @@ footer .socials li{
 }
 
 footer .socials a{
-    color: aliceblue;
+    /*color: aliceblue;*/
     /*border: solid 2px #fff;*/
     border: solid 2px black;
     border-radius: 50%;
@@ -655,6 +654,7 @@ footer .socials a{
     height: 4.2rem;
     display: flex;
     justify-content: center;
+    transform: all 1s;
 }
 
 footer .socials a:hover{
