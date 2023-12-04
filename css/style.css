@@ -271,8 +271,20 @@ section{
     align-items: center;
 }
 
+/* *** animation du texte **** */
 .hero__item span{
     text-transform: uppercase; /* met le texte en majuscule */
+}
+
+/* *** animation de la photo **** */
+.hero__item.left {
+    animation-duration: 1s;
+    animation-name: slideInleft;
+}
+
+.hero__item.right{
+    animation-duration: 1s;
+    animation-name: slideInright;
 }
 
 .hero .grid{
@@ -660,4 +672,26 @@ footer .socials a:hover{
         max-width:33.333%;
         border: solid 2px red;
     }*/
+}
+
+/* ***************************************** Surplus ****************************************** */
+
+/* ******** mouvement de la page d'accueil ******** */
+/* @keyframes animation CSS */
+@keyframes slideInleft {
+    from{
+        transform: translateX(-110%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInright {
+    from{
+        transform: translatex(110%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
