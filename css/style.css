@@ -140,7 +140,7 @@ li{
     }
 }
 
-/* ************************************************************************ Sections ************************************************************************ */
+/* ************************************************************ Sections *************************************************************** */
 
 section{
     padding: 5.5rem 0;
@@ -289,9 +289,11 @@ section{
 /* ***************************************************** Hero **************************************************** */
 
 .hero{
-    background: var(--white-bg-1);
-    color: aliceblue;
+    /*background: var(--white-bg-1);*/
+    /*color: aliceblue;*/
     padding: 1rem 0 0 0;
+    /*min-height: 78.5vh;*/
+    border: solid 2px red;
 }
 
 .hero .title{
@@ -479,10 +481,10 @@ section{
 
 /* ***************************************************** Services **************************************************** */
 
-.services{
+/*.services{
     background: var(--white-bg-1);
-    /*color: aliceblue;*/
-}
+    color: aliceblue;
+}*/
 
 .service__icon{
     display: flex;
@@ -581,9 +583,9 @@ section{
 
 /* ***************************************************** Portfolio **************************************************** */
 
-.portfolio{
+/*.portfolio{
     background: var(--white-bg-1);
-}
+}*/
 
 .portfolio .grid__item{
     /*max-width: 33.3333%;*/
@@ -749,7 +751,7 @@ section{
 /* ***************************************************** Footer **************************************************** */
 
 footer{
-    background: var(--white-bg-1);
+    background: var(--white-bg-nav);
     /*background: #000;
     color: var (--white-color-3);*/
     text-align: center;
@@ -810,6 +812,13 @@ footer .socials a:hover{
     footer .grid__item{
         max-width:33.333%;
        /*border: solid 2px red;*/
+    }
+    
+    .he{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        /*border: solid 2px blue;*/
     }
 }
 
