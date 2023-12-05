@@ -8,13 +8,25 @@
 :root{
     --white-1: black;
     --white-2:#333;
-    --white-bg-nav:rgba(114, 221, 157, 0.952);
+    --white-bg-nav:rgba(114, 221, 1577, 0.952);
     --white-bg-1:rgba(102, 216, 220);
     --white-color-1:rgb(75, 169, 172);
     --white-color-2:rgb(19, 151, 155);
-    --white-color-3:#eee;
+    --white-color-3:#333;
     --white-border:rgb(30, 212, 218);
     --white-border-boutton:#7a0e0e;
+    
+
+    --black-1: aliceblue;
+    --black-2:rgb(239, 243, 247);
+    --black-bg-nav:rgba(80, 15, 45, 0.952);
+    --black-bg-1:#4d0019;
+    --black-color-1:#bd3939;
+    --black-color-2:#e82c2c;
+    --black-color-3:#eee;
+    --black-border:#330011;
+    --black-border-boutton:rgb(37, 219, 131);
+
 } 
 
 /* pour mettre les couleurs sur les éléments faire ctrl + f mettre la couleur vouluent
@@ -615,7 +627,7 @@ section{
 /* Rajout par rapport à la vidéo */
 .form input:hover, .form textarea:hover{
     /* effet lorsqu'on passe la souris dessus dans le formnulaire */
-    outline: 4px solid var(--bg-1);
+    outline: 4px solid var(--white-bg-1);
     border-radius: 2rem;
     border: none;
 }
@@ -643,7 +655,7 @@ section{
 
 .form .btn:hover{
     cursor:pointer;
-    background: var(--bg-1);
+    background: var(--white-bg-1);
     outline: 4px solid var(--white-color-2);
 
 }
@@ -651,7 +663,7 @@ section{
 /* ***************************************************** Footer **************************************************** */
 
 footer{
-    background: var(--bg-1);
+    background: var(--white-bg-1);
     /*background: #000;
     color: var (--white-color-3);*/
     text-align: center;
