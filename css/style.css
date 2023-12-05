@@ -16,7 +16,7 @@
     --white-border:rgb(30, 212, 218);
     --white-border-boutton:#7a0e0e;
     
-
+    /* Mode sombre */
     --black-1: aliceblue;
     --black-2:rgb(239, 243, 247);
     --black-bg-nav:rgba(80, 15, 45, 0.952);
@@ -389,6 +389,64 @@ section{
     align-items: center;
     /*border: solid 1px blue;*/
   }
+}
+
+/* ******* Carrousel ***** */
+.gallery {
+    --s: 120px; /* taille du carrousel */
+    display: grid;
+    transform-style: preserve-3d;
+    animation: r 15s linear infinite;
+    position: relative;
+}
+
+@keyframes r {
+    0% {transform: perspective(450px) rotateX(-100deg) rotate(0deg)}
+    to {transform: perspective(450px) rotateX(-100deg) rotate(-360deg)}
+}
+
+/* image du carrousel */
+.gallery > img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1; /* définit un ratio d'affichage  */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transform: rotate(var(--_a)) translateY(120%) rotateX(90deg);
+    border: solid 2px green;
+}
+
+.gallery > img:nth-child(1) {--_a: 0deg}
+.gallery > img:nth-child(2) {--_a: 60deg}
+.gallery > img:nth-child(3) {--_a: 120deg}
+.gallery > img:nth-child(4) {--_a: 180deg}
+.gallery > img:nth-child(5) {--_a: 240deg}
+.gallery > img:nth-child(6) {--_a: 300deg}
+  
+.gallery::before {
+    content: "";
+    position: absolute;
+    inset: -100%;
+    clip-path: polygon(50% 0,calc(50% + .866*50%) 25%,calc(50% + .866*50%) 75%,50% 100%,calc(50% - .866*50%) 75%,calc(50% - .866*50%) 25%);
+    background: var(--white-color-2);
+    transform: translateZ(calc(var(--s)/2)) rotate(90deg);
+}
+
+.carrousel {
+    min-height: 45rem;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    border: solid 2px red;
+}
+
+/* pour grand écran */
+@media screen and (min-width:750px) {
+    .gallery {
+        --s: 150px; /* taille du carrousel */
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* ***************************************************** Services **************************************************** */
