@@ -7,26 +7,17 @@
  comme le dark mode ou la charte graphique*/
 :root{
     --white-1: black;
-    --white-2:#333;
-    --white-bg-nav: rgba(239, 243, 247, 0.721);
-    --white-bg-1:rgba(102, 216, 220);
-    --white-color-1:rgb(75, 169, 172);
-    --white-color-2:rgb(19, 151, 155);
+    --white-2:#858484;
+    --white-bg-nav: rgba(240, 248, 255, 0.495);
+    --white-bg-1:#0082b7;
+    --white-color-2:#aeb100;
+    --white-color-1:#e26335;
     --white-color-3:#333;
-    --white-border-boutton:rgb(30, 212, 218);
-    --white-border:#7a0e0e;
-    
-    /*Mode sombre */
-    --black-1: aliceblue;
-    --black-2:rgb(239, 243, 247);
-    --black-bg-nav:rgba(80, 15, 45, 0.952);
-    --black-bg-1:#4d0019;
-    --black-color-1:#bd3939;
-    --black-color-2:#e82c2c;
-    --black-color-3:#eee;
-    --black-border:#330011;
-    --black-border-boutton:rgb(37, 219, 131);
-
+    --white-color-4:#00be9a;
+    --white-color-5:#7eba43;
+    --white-color-6:#d28c04;
+    --white-border-boutton: #bc3381;
+    --white-border:#f9f4f4;
 } 
 
 /* pour mettre les couleurs sur les éléments faire ctrl + f mettre la couleur vouluent
@@ -40,6 +31,7 @@ puis flèche du bas remplacer, mettre la variable vouluent ensuite remplacer tou
 }
 
 html{
+    background-image: linear-gradient(to left top, #1f368b, #005ead, #0082b7, #00a1ad, #00be9a, #4cbe71, #7eba43, #aeb100, #d28c04, #e26335, #dc3f5d, #bc3381);
     font-size: 62.5%; /* cela redéfinit la font-size de base à 10px soit 1rem */
 }
 
@@ -48,12 +40,12 @@ body{
     font-size: 1.6rem; /* = 16px */
     line-height: 1.6;
     /*color: #555;*/
-    background: linear-gradient(
+    /*background: linear-gradient(
       90deg,
       rgba(131, 58, 180, 1) 0%,
       rgba(253, 29, 29, 0.6) 60%,
       rgba(252, 176, 69, 1) 100%
-    ), radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 28%);
+    ), radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 28%);*/
     margin: 0;
     font-family: 'Poppins', sans-serif; /* typo choisit récupérer sur le site directement */
 
@@ -298,8 +290,10 @@ section{
     /*background: var(--white-bg-1);*/
     /*color: aliceblue;*/
     padding: 1rem 0 0 0;
-    /*min-height: 78.5vh;*/
-    border: solid 2px red;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /*border: solid 2px red;*/
 }
 
 .hero .title{
@@ -349,6 +343,10 @@ section{
 
 /* grand écran seulement */
 @media screen and (min-width:750px) {
+    .hero{
+        min-height: 78.5vh;
+    }
+
     .hero__item{
         /* rassemble trois propriétés */
         flex: 1 0 50%;
@@ -435,9 +433,6 @@ section{
     transform: rotate(var(--_a)) translateY(120%) rotateX(90deg); /* inclinaison des images */
     margin: 0;
     padding: 0;
-    box-shadow: .3rem .3rem var(--white-color-2), -1rem -.4rem .4rem var(--white-bg-1);
-
-
     /*border: solid 2px green;*/
 }
 
@@ -453,7 +448,7 @@ section{
     position: absolute;
     inset: -100%; /* positionne le socle en bas des images */
     clip-path: polygon(50% 0,calc(50% + .866*50%) 25%,calc(50% + .866*50%) 75%,50% 100%,calc(50% - .866*50%) 75%,calc(50% - .866*50%) 25%); /* forme du socle */
-    background: var(--white-border-boutton);
+    background: var(--white-bg-1);
     transform: translateZ(calc(var(--s)/2)) rotate(90deg); /* évite que l'image soit couper en deux par le support */
 }
 
@@ -498,7 +493,7 @@ section{
     justify-content: center;
     width: 9rem;
     height: 9rem;
-    border: solid 2px var(--white-color-1);
+    border: solid 2px var(--white-color-3);
     border-radius: 50%;
 }
 
@@ -555,7 +550,7 @@ section{
 .skills li {
     background: #f5f5f5;
     /*border-left: 0.3rem solid rgb(91, 107,120);*/
-    border-left: 0.4rem solid var(--white-border);
+    border-left: 0.4rem solid var(--white-bg-1);
     padding: .9rem 2rem;
 }
 
@@ -570,20 +565,21 @@ section{
 
     /* rajout pour que les deux colonnes soit aligner */
     .skills h4, .skills p{
-        margin: 0 0 0.7rem 0;
+        margin: 0 0 .8rem 0;
     }
 }
 
 /* **** Grille de droite **** */
 .skills .progressbar{
     background: #f5f5f5;
+    border: solid .1rem var(--white-color-3);
     color: aliceblue;
     margin-bottom: 1rem;
 }
 
 .skills .bar{
     /*background: #5b6c78;*/
-    background: var(--white-bg-1);
+    background: var(--white-color-4);
     padding:1rem;
 }
 
@@ -614,9 +610,9 @@ section{
 
 /* onglet familles des projets */
 .portfolio-filters a{
-    color:var(--white-2);
+    color:var(--white-1);
     /*background: var (--white-color-3);*/
-    background: var(--white-color-1);
+    background: var(--white-bg-1);
     display: flex;
     flex: 1;
     justify-content: center;
@@ -625,7 +621,7 @@ section{
 
 /* pour quand on click sur une famille de projet */
 .portfolio-filters a.active{
-    background: var(--white-color-2);
+    background: var(--white-color-4);
     color:aliceblue;
 }
 
@@ -660,7 +656,7 @@ section{
     background: aliceblue;
     text-transform: uppercase;
     position: relative; /* Parent */
-    box-shadow: 10px 5px 5px 1px var(--white-color-2);
+    box-shadow: 10px 5px 5px 1px var(--white-border-boutton);
     border: 1px solid var (--white-color-3);
 }
 
@@ -721,7 +717,7 @@ section{
 /* Rajout par rapport à la vidéo */
 .form input:hover, .form textarea:hover{
     /* effet lorsqu'on passe la souris dessus dans le formnulaire */
-    outline: 4px solid var(--white-bg-1);
+    outline: 4px solid var(--white-border-boutton);
     border-radius: 2rem;
     border: none;
 }
@@ -749,8 +745,8 @@ section{
 
 .form .btn:hover{
     cursor:pointer;
-    background: var(--white-bg-1);
-    outline: 4px solid var(--white-color-2);
+    background: var(--white-color-4);
+    outline: 4px solid var(--white-border-boutton);
 
 }
 
@@ -805,8 +801,8 @@ footer .socials a{
 }
 
 footer .socials a:hover{
-    color: var(--white-1);
-    background: aliceblue;
+
+    background: var(--white-2);
 }
 
 @media screen and (min-width:750px) {
@@ -819,13 +815,7 @@ footer .socials a:hover{
         max-width:33.333%;
        /*border: solid 2px red;*/
     }
-    
-    .he{
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        /*border: solid 2px blue;*/
-    }
+
 }
 
 /* ***************************************** Surplus ****************************************** */
