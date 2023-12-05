@@ -413,7 +413,7 @@ section{
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transform: rotate(var(--_a)) translateY(120%) rotateX(90deg);
-    border: solid 2px green;
+    /*border: solid 2px green;*/
 }
 
 .gallery > img:nth-child(1) {--_a: 0deg}
@@ -426,10 +426,10 @@ section{
 .gallery::before {
     content: "";
     position: absolute;
-    inset: -100%;
-    clip-path: polygon(50% 0,calc(50% + .866*50%) 25%,calc(50% + .866*50%) 75%,50% 100%,calc(50% - .866*50%) 75%,calc(50% - .866*50%) 25%);
+    inset: -100%; /* positionne le socle en bas des images */
+    clip-path: polygon(50% 0,calc(50% + .866*50%) 25%,calc(50% + .866*50%) 75%,50% 100%,calc(50% - .866*50%) 75%,calc(50% - .866*50%) 25%); /* forme du socle */
     background: var(--white-color-2);
-    transform: translateZ(calc(var(--s)/2)) rotate(90deg);
+    transform: translateZ(calc(var(--s)/2)) rotate(90deg); /* évite que l'image soit couper en deux par le support */
 }
 
 .carrousel {
@@ -437,7 +437,7 @@ section{
     display: grid;
     place-content: center;
     overflow: hidden;
-    border: solid 2px red;
+    /*border: solid 2px red;*/
 }
 
 /* pour grand écran */
