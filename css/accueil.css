@@ -16,14 +16,14 @@ body{
     /*color: #555;*/
     margin: 0;
     font-family: 'Poppins', sans-serif; /* typo choisit récupérer sur le site directement */
-    background-image:url(./img/) ;
+    background-image: url(./img/space-background.jpg);
 }
 
 #univers{
     height: 100%;
     width: 100%;
     display: flex;
-    flex:0;
+    z-index: 0;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -389,12 +389,14 @@ li{
 .container{
     /*display: flex;*/
     padding:1rem 2rem;
+    z-index: 1;
 }
 
 .d-flex{
     display: flex; /*  les élements se mette les uns à coter des autres */
     align-content: center;
     justify-content:space-between;
+    z-index: 1;
 }
 
 /* pour les différentes grilles du site */
@@ -573,6 +575,7 @@ section{
     /*color: aliceblue;*/
     padding: 1rem 0 0 0;
     /*min-height: 78.5vh;*/
+    z-index: 2;
     border: solid 2px red;
 }
 
@@ -652,6 +655,7 @@ footer{
     color: var (--white-color-3);*/
     text-align: center;
     font-size: 1.4rem;
+    z-index: 3;
     /*border: solid 2px gold;*/
 }
 
