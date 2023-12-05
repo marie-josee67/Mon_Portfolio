@@ -558,6 +558,12 @@ section{
     border: 1px solid var (--white-color-3);
 }
 
+.card img{
+    width: 30.6rem;
+    height: 20.6rem;
+    /*border: solid 2px red;*/
+}
+
 .card__inner{
     padding: 2rem;
 }
