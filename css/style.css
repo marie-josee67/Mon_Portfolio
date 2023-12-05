@@ -8,7 +8,7 @@
 :root{
     --white-1: black;
     --white-2:#333;
-    --white-bg-nav: rgba(114, 221, 157, 0.952);
+    --white-bg-nav: rgba(239, 243, 247, 0.721);
     --white-bg-1:rgba(102, 216, 220);
     --white-color-1:rgb(75, 169, 172);
     --white-color-2:rgb(19, 151, 155);
@@ -16,7 +16,7 @@
     --white-border-boutton:rgb(30, 212, 218);
     --white-border:#7a0e0e;
     
-    /* Mode sombre */
+    /*Mode sombre */
     --black-1: aliceblue;
     --black-2:rgb(239, 243, 247);
     --black-bg-nav:rgba(80, 15, 45, 0.952);
@@ -48,7 +48,12 @@ body{
     font-size: 1.6rem; /* = 16px */
     line-height: 1.6;
     /*color: #555;*/
-    background-image: url("https://milan-jeunesse.com/mj/wp-content/uploads/2022/10/Espace-Systeme-solaire-Google-Wapiti-Web-842x632.jpg");
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 0.6) 60%,
+      rgba(252, 176, 69, 1) 100%
+    ), radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 28%);
     margin: 0;
     font-family: 'Poppins', sans-serif; /* typo choisit récupérer sur le site directement */
 
