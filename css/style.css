@@ -8,13 +8,13 @@
 :root{
     --white-1: black;
     --white-2:#333;
-    --white-bg-nav:rgba(114, 221, 1577, 0.952);
+    --white-bg-nav: rgba(114, 221, 157, 0.952);
     --white-bg-1:rgba(102, 216, 220);
     --white-color-1:rgb(75, 169, 172);
     --white-color-2:rgb(19, 151, 155);
     --white-color-3:#333;
-    --white-border:rgb(30, 212, 218);
-    --white-border-boutton:#7a0e0e;
+    --white-border-boutton:rgb(30, 212, 218);
+    --white-border:#7a0e0e;
     
     /* Mode sombre */
     --black-1: aliceblue;
@@ -369,12 +369,24 @@ section{
     margin-top: 2.8rem;
 }
 
+.about img {
+    border-radius: 50%;
+    filter: grayscale(90%);
+    /*border: solid 1px rgb(0, 255, 136);*/
+  }
+
+  .about img:hover{
+    filter: grayscale(0%);
+}
+
 @media screen and (min-width:750px) {
   .about img {
-    padding-right: 3rem;
+    /*padding-right: 3rem;*/
     border-radius: 50% 10%;
+    box-shadow: 10px -5px 5px var(--white-color-2);
     /*border: solid 1px red;*/
   }
+
   /* manque dans le code d'origine réponse trouver dans les commentaires */
   .about .grid__item{
     max-width: 50%;
@@ -391,12 +403,12 @@ section{
   }
 }
 
-/* ******* Carrousel ***** */
+/* ***************** Carrousel ******************** */
 .gallery {
     --s: 120px; /* taille du carrousel */
     display: grid;
     transform-style: preserve-3d;
-    animation: r 15s linear infinite;
+    animation: r 18s linear infinite; /* Temps de tournage des images */
     position: relative;
 }
 
@@ -410,9 +422,14 @@ section{
     grid-area: 1/1;
     width: var(--s);
     aspect-ratio: 1; /* définit un ratio d'affichage  */
-    object-fit: cover;
+    object-fit:cover; /* définit comment l'image s'adapte au conteneur */
     border-radius: 10px 10px 0 0;
-    transform: rotate(var(--_a)) translateY(120%) rotateX(90deg);
+    transform: rotate(var(--_a)) translateY(120%) rotateX(90deg); /* inclinaison des images */
+    margin: 0;
+    padding: 0;
+    box-shadow: .3rem .3rem var(--white-color-2), -1rem -.4rem .4rem var(--white-bg-1);
+
+
     /*border: solid 2px green;*/
 }
 
@@ -428,24 +445,35 @@ section{
     position: absolute;
     inset: -100%; /* positionne le socle en bas des images */
     clip-path: polygon(50% 0,calc(50% + .866*50%) 25%,calc(50% + .866*50%) 75%,50% 100%,calc(50% - .866*50%) 75%,calc(50% - .866*50%) 25%); /* forme du socle */
-    background: var(--white-color-2);
+    background: var(--white-border-boutton);
     transform: translateZ(calc(var(--s)/2)) rotate(90deg); /* évite que l'image soit couper en deux par le support */
 }
 
 .carrousel {
+    width: 100%;
     min-height: 45rem;
     display: grid;
     place-content: center;
     overflow: hidden;
+    /*background: var(--white-color-2);*/
     /*border: solid 2px red;*/
 }
 
 /* pour grand écran */
 @media screen and (min-width:750px) {
     .gallery {
-        --s: 150px; /* taille du carrousel */
+        --s: 170px; /* taille du carrousel */
         padding: 0;
         margin: 0;
+    }
+    .carrousel {
+        width: 100%;
+        min-height: 55rem;
+        display: grid;
+        place-content: center;
+        overflow: hidden;
+        /*background: var(--white-color-2);*/
+        /*border: solid 2px red;*/
     }
 }
 
