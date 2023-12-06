@@ -180,8 +180,16 @@ li{
 
 .typo{
     font-family: Nabla; /* typo choisit récupérer sur le site directement */
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 0 1rem;
     letter-spacing: 2px; /* espace entre les lettres */
+}
+
+/* Grand écran */
+@media screen and (min-width:750px) {
+    .typo{
+        font-size: 2.5rem;
+    }
 }
 
 .navbar{
@@ -757,6 +765,7 @@ footer{
     color: var (--white-color-3);*/
     text-align: center;
     font-size: 1.4rem;
+    /*padding: 0 1.5rem;*/
     /*border: solid 2px gold;*/
 }
 
@@ -769,7 +778,7 @@ footer .grid__item{
 }
 
 footer p{
-    margin: 0;
+    margin:0 1rem;
 }
 
 footer .grid{
@@ -779,6 +788,7 @@ footer .grid{
 footer .socials{
     text-align: center;
     justify-content: center;
+    margin: 0 1rem;
 }
 
 footer .socials li{
