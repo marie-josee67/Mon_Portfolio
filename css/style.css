@@ -389,7 +389,7 @@ section{
   .about img {
     /*padding-right: 3rem;*/
     border-radius: 50% 10%;
-    box-shadow: 10px -5px 5px var(--white-color-2);
+    box-shadow: 10px -5px 5px var(--white-color-4);
     /*border: solid 1px red;*/
   }
 
@@ -433,6 +433,7 @@ section{
     transform: rotate(var(--_a)) translateY(120%) rotateX(90deg); /* inclinaison des images */
     margin: 0;
     padding: 0;
+    box-shadow: 10px -5px 5px var(--white-color-6);
     /*border: solid 2px green;*/
 }
 
