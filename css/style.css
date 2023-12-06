@@ -555,15 +555,19 @@ li{
 /* ***************************************************** Mes compétences**************************************************** */
 
 /* ***** grille de gauche **** */
-.skills h4, .skills p{
+/*.skills h4, .skills p{
     margin: 0 0 0.3rem 0;
+}*/
+
+.skills p{
+    font-size: 1.4rem;
 }
 
 .skills li {
     background: #f5f5f5;
     /*border-left: 0.3rem solid rgb(91, 107,120);*/
     border-left: 0.4rem solid var(--white-bg-1);
-    padding: .9rem 2rem;
+    padding: 0.1rem 0 0 0.5rem;
 }
 
 @media screen and (min-width:750px) {
@@ -576,9 +580,9 @@ li{
     }
 
     /* rajout pour que les deux colonnes soit aligner */
-    .skills h4, .skills p{
+    /*.skills h4, .skills p{
         margin: 0 0 .8rem 0;
-    }
+    }*/
 }
 
 /* **** Grille de droite **** */
@@ -586,7 +590,23 @@ li{
     background: #f5f5f5;
     border: solid .1rem var(--white-color-3);
     color: aliceblue;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+
+@media screen and (min-width:750px) {
+
+  /* Le margin 0 évite l'ascendance parent enfant */
+    .skills .grid__item {
+        max-width: 50%;
+        margin:0;
+        /*border: solid 2px red;*/
+    }
+
+    /* rajout pour que les deux colonnes soit aligner */
+    /*.skills h4, .skills p{
+        margin: 0 0 .8rem 0;
+    }*/
 }
 
 .skills .bar{
