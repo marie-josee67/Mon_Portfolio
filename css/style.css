@@ -47,6 +47,7 @@ body{
       rgba(252, 176, 69, 1) 100%
     ), radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 28%);*/
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif; /* typo choisit récupérer sur le site directement */
 
 }
@@ -140,9 +141,9 @@ li{
 
 /* ************************************************************ Sections *************************************************************** */
 
-section{
+/*section{
     padding: 5.5rem 0;
-}
+}*/
 
 .section-title{
     margin-top: 0;
@@ -369,8 +370,6 @@ section{
 }
 
 /* ***************************************************** A propos **************************************************** */
-
-
 .about .section-title{
     margin-top: 2.8rem;
 }
