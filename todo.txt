@@ -16,6 +16,8 @@ sources:
 
     https://developer.mozilla.org/fr/docs/Web/CSS/aspect-ratio ==> rasio du carrousel 
 
+    https://mycolor.space/gradient3 ==> fond d'écran du site web
+
     vidéo HTML arrêt :    28:04
                         1:11:19
 
