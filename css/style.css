@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,.h1{
     font-size: 3.1rem;
+    text-transform: uppercase;
 }
 
 h2, .h2{
@@ -711,6 +712,7 @@ li{
 .form{
     max-width: 60rem;
     margin: 4rem auto 0 auto;
+    /*border: solid 2px blue;*/
 }
 
 .form input, .form textarea{
@@ -755,6 +757,29 @@ li{
     background: var(--white-color-4);
     outline: 4px solid var(--white-border-boutton);
 
+}
+
+.localisation{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    margin: 4rem auto 0 auto;
+    /*border: solid 2px purple;*/
+}
+
+/* titre de la localisation */
+.sos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe, .carte {
+    width: 100%;
+    height: 30rem;
+    /*border: solid 2px red;*/
 }
 
 /* ***************************************************** Footer **************************************************** */
