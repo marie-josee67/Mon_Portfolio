@@ -197,9 +197,9 @@ li{
     }
 }
 
-.navbar{
+/*.navbar{
     display: none;
-}
+}*/
 
 .burger{
     background: none;
@@ -236,6 +236,45 @@ li{
 /* *** barre du bas *** */
 .burger .bar::after{
     transform:translateY(3rem);
+}
+
+/* petit écran burger*/
+@media screen and (max-width:749px) {
+    nav{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position:fixed;
+        top:5.5rem;
+        left: 110%; /* on l'expédit loin de l'écran */
+        width: 0;
+        overflow: hidden; /* on masque l'élément */
+        opacity: 0;
+        /* calc ==> permet de calculer */
+        height: calc(100vh - 5.5rem);
+        background: #f5f5f5;
+        transition: all .4s ease-out; /* transition de tous les éléments */
+    }
+
+    nav .menu li{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .menu a{
+        display: block;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    /* class créer pour le JS */
+    .show-nav nav{
+        opacity: 1;
+        width: 100%;
+        left:0;
+        z-index: 2;
+    }
 }
 
 /*  info mettre les max-width avant les min-width. Les max-width vont du plus grand au plus petit et le min-whdth c'est l'inverse. */
