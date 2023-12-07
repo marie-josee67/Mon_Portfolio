@@ -266,6 +266,7 @@ li{
         display: block;
         font-size: 2rem;
         padding: 2rem;
+        transition: all .4s;
     }
 
     /* class créer pour le JS */
@@ -277,7 +278,7 @@ li{
     }
 
     .show-nav nav li a:hover{
-        transform: scale(1.5); /* agrandis le texte */
+        transform: scale(1.3); /* agrandis le texte */
         text-decoration: none;
         color: var(--white-color-1);
     }
