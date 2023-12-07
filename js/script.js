@@ -99,3 +99,23 @@ const calcul = (nb1, nb2) => {
 }
 let result = calcul (4, 5);
 console.log (result);
+
+// interagir avec le dom // methode, propriete, evement
+
+//console.log(window);
+console.log(document.body);
+
+// selectors
+
+//let header = document.querySelector(".header > .container");
+//console.log(header);
+
+let header = document.getElementById("hero");
+console.log("hero");
+
+// tous les éléments
+let grifs = document.querySelectorAll("grid");
+
+grids.forEach( grid =>{
+    console.log(grid);
+})
