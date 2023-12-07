@@ -279,6 +279,12 @@ li{
     /* trait principale */
     .show-nav .burger .bar{
         width: 0;
+
+    }
+
+    /* transition de la croix */
+    .burger .bar::before, .burger .bar::after{
+        transition: all .2s ease-out;
     }
 
     /* trait du haut */
