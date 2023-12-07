@@ -699,6 +699,11 @@ li{
     margin: 0;
 }
 
+/* ******************************** pour le Js *************************** */
+.portfolio .grid__item.hide{
+    display: none;
+}
+
 /* class rajouter pour palier le bug */
 .portfolio .grid_1{
     max-width: 70%; /* 33.3333% dans la vidéo */

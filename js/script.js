@@ -29,29 +29,42 @@ function tabsFilters (){
     const tabs = document.querySelectorAll(".porfolio-filters a"); /* cible le portfolio */
     const projets = document.querySelectorAll(".porfolio .card"); /* cible la carte */
 
+    /* remet la classe active à zéro */
+    const resetActiveLinks = () => {
+        tabs.forEach(elem => {
+            elem.classList.remove("active");
+        })
+    }
+
     /* liste toutes les cards */
-    const showProjets= (elem) =>{
+    const showProjets = (elem) =>{
         console.log(elem);
-        projets.forEach(projet =>{
+        projets.forEach(projet => {
             let filter = projet.getAttribute("data-category");
 
+            if(elem ==="all"){
+                projet.parentNode.classList.remove("hide");
+                return
+            }
+            // ne sera pas prit en compte
             if(filter !== elem){
                 projet.parentNode.classList.add("hide");
+            }else{
+                projet.parentNode.classList.remove("hide");
             }
             //console.log(projet);
         });
     }
 
-    tabs.forEach(elem =>{
+    tabs.forEach(elem => {
         elem.addEventListener("click", (event) => {
             event.preventDefault(); /* ne suit pas l'action  il empêche sont fonctionnement natif de remonter en haut dans la page*/
             let filter = elem.getAttribute("data-filter");
             //console.log(filter);
             showProjets(filter)
+            resetActiveLinks(); /* mise en fonction de la remise à zéro de la classe active */
             elem.classList.add("active");
         });
     })
 }
-
-
 tabsFilters ()
