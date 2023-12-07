@@ -24,28 +24,35 @@ menuMobile();
 
 // ******************************************************* partie portfolio 
 
-// filtre des projets
-function tabsFilters (){
-    const tabs = document.querySelectorAll(".porfolio-filters a"); /* cible le portfolio */
-    const projets = document.querySelectorAll(".porfolio .card"); /* cible la carte */
+function tabsFilters() {
+    const tabs = document.querySelectorAll(".portfolio-filters a"); /* cible le portfolio */
+    const projets = document.querySelectorAll(".portfolio .card"); /* cible la carte */
 
     /* liste toutes les cards */
-    const showProjets= () =>{
-        projets.forEach(projet =>{
-            console.log(projet);
+    const showProjets = (filter) => {
+        projets.forEach(projet => {
+            const projetFilter = projet.getAttribute("data-filter");
+            if (filter === "all" || filter === projetFilter) {
+                projet.style.display = "block";
+            } else {
+                projet.style.display = "none";
+            }
         });
     }
 
-    tabs.forEach(elem =>{
+    tabs.forEach(elem => {
         elem.addEventListener("click", (event) => {
-            event.preventDefault(); /* ne suit pas l'action  il empêche sont fonctionnement natif de remonter en haut dans la page*/
+            event.preventDefault(); /* ne suit pas l'action, il empêche son fonctionnement natif de remonter en haut dans la page */
             let filter = elem.getAttribute("data-filter");
             console.log(filter);
-        })
-    })
+            showProjets(filter);
+        });
+    });
 
-    showProjets();
+    showProjets("all"); // Afficher tous les projets au chargement initial
 }
+
+tabsFilters();
 
 
 tabsFilters ()
