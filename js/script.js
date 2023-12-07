@@ -114,8 +114,14 @@ let header = document.getElementById("hero");
 console.log("hero");
 
 // tous les éléments
-let grifs = document.querySelectorAll("grid");
+let grids = document.querySelectorAll("grid");
 
 grids.forEach( grid =>{
     console.log(grid);
 })
+
+// evenements les plus courants
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    console.log ("DOM entièrement chargé et analysé");
+});
