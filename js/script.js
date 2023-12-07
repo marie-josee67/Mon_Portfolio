@@ -12,9 +12,9 @@ function menuMobile(){
     });
 
     links.forEach(link => {
-        link.addEventListener("click", ()  =>{
+        link.addEventListener("click", () => {
         header.classList.remove("show-nav"); 
-    });
+        });
     });
 }
 
