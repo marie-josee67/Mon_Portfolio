@@ -11,5 +11,5 @@ function menuMobile(){
     })
 }
 
-/* jouer la function créer du clicke burger */
+/* jouer la function créer du click burger */
 menuMobile();

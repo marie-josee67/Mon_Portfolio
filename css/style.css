@@ -268,14 +268,27 @@ li{
         padding: 2rem;
     }
 
-
-    
     /* class créer pour le JS */
     .show-nav nav{
         opacity: 1;
         width: 100%;
         left:0;
         z-index: 2;
+    }
+
+    /* trait principale */
+    .show-nav .burger .bar{
+        width: 0;
+    }
+
+    /* trait du haut */
+    .show-nav .burger .bar::before{
+        transform: rotate(-45deg);
+    }
+
+    /* trait du bas */
+    .show-nav .burger .bar::after{
+        transform: rotate(45deg);
     }
 }
 
