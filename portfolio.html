@@ -81,19 +81,20 @@
                 <!-- *************************** gril des filtres de projets ******************-->
                 <ul class="grid portfolio-filters list-unstyled">
                     <li class="grid__item">
-                        <a href="#" class="active">Tous les projets</a>
+                        <!-- data-filter ==> pour le js -->
+                        <a href="#" class="active" data-filter="all">Tous les projets</a>
                     </li>
 
                     <li class="grid__item">
-                        <a href="#">Développement web</a>
+                        <a href="#" data-filter="web" >Développement web</a>
                     </li>
 
                     <li class="grid__item">
-                        <a href="#"> Web Design</a>
+                        <a href="#" data-filter="design" > Web Design</a>
                     </li>
 
                     <li class="grid__item">
-                        <a href="#">Application</a>
+                        <a href="#" data-filter="app" >Application</a>
                     </li>
                 </ul>
 
@@ -101,7 +102,8 @@
 
                 <div class="grid">
                     <div class="grid_1">
-                        <div class="card">
+                        <!-- data-category ==> js des class pour le filtre-->
+                        <div class="card" data-category="web" >
 
                             <!-- image fictif aléatoire -->
                             <img  class="card__image" src="./img/Le_quai_des_machines_image.JPG" alt="image du projet">
@@ -118,7 +120,7 @@
                     </div>
 
                     <div class="grid_1">
-                        <div class="card">
+                        <div class="card" data-category="design" >
 
                             <!-- image fictif aléatoire -->
                             <img  class="card__image" src="./img/projet_photopea_2022.jpg" alt="image du projet">
@@ -135,7 +137,7 @@
                     </div>
 
                     <div class="grid_1">
-                        <div class="card">
+                        <div class="card" data-category="app" >
 
                             <!-- image fictif aléatoire -->
                             <img  class="card__image" src="./img/Jeux_Sup_Manip_Essaie_image.JPG" alt="image du projet">
@@ -152,7 +154,7 @@
                     </div>
 
                     <div class="grid_1">
-                        <div class="card">
+                        <div class="card" data-category="web" >
 
                             <!-- image fictif aléatoire -->
                             <img  class="card__image" src="./img/Fiche_metier_Web_Design.JPG" alt="image du projet">
@@ -169,7 +171,7 @@
                     </div>
 
                     <div class="grid_1">
-                        <div class="card">
+                        <div class="card" data-category="design" >
 
                             <!-- image fictif aléatoire -->
                             <img  class="card__image" src="./img/carte de visite recto.png" alt="image du projet">
@@ -186,7 +188,7 @@
                     </div>
 
                     <div class="grid_1">
-                        <div class="card">
+                        <div class="card" data-category="app" >
 
                             <!-- image fictif aléatoire -->
                             <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
