@@ -702,6 +702,7 @@ li{
 /* ******************************** pour le Js *************************** */
 .portfolio .grid__item.hide{
     display: none;
+    /*border: solid 2px rgb(173, 20, 184);*/
 }
 
 /* class rajouter pour palier le bug */
@@ -765,7 +766,7 @@ li{
     text-transform: uppercase;
     position: relative; /* Parent */
     box-shadow: 10px 5px 5px 1px var(--white-border-boutton);
-    border: 1px solid var (--white-color-3);
+    border: 1px solid var(--white-color-3);
 }
 
 .card img{

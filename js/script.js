@@ -26,8 +26,8 @@ menuMobile();
 
 // filtre des projets
 function tabsFilters (){
-    const tabs = document.querySelectorAll(".porfolio-filters a"); /* cible le portfolio */
-    const projets = document.querySelectorAll(".porfolio .card"); /* cible la carte */
+    const tabs = document.querySelectorAll(".portfolio-filters a"); /* cible le portfolio */
+    const projets = document.querySelectorAll(".portfolio .card"); /* cible la carte */
 
     /* remet la classe active à zéro */
     const resetActiveLinks = () => {
@@ -36,27 +36,28 @@ function tabsFilters (){
         })
     }
 
+    // ligne 40 à 58 une solution de chatGPT qui fonctionne enfin après 1h de bugs
     /* liste toutes les cards */
-    const showProjets = (elem) =>{
-        console.log(elem);
+    const showProjets = (elem) => {
+        console.log("Filter:", elem);
+    
         projets.forEach(projet => {
             let filter = projet.getAttribute("data-category");
-
-            if(elem ==="all"){
-                projet.parentNode.classList.remove("hide");
-                return
+            let projetParentNode = projet.parentNode;
+    
+            console.log("Project Filter:", filter);
+    
+            if (elem === "all" || filter === elem) {
+                console.log("Show Project:", filter);
+                projetParentNode.style.display = "block";
+            } else {
+                console.log("Hide Project:", filter);
+                projetParentNode.style.display = "none";
             }
-            // ne sera pas prit en compte
-            if(filter !== elem){
-                projet.parentNode.classList.add("hide");
-            }else{
-                projet.parentNode.classList.remove("hide");
-            }
-            //console.log(projet);
         });
-    }
+    };
 
-    tabs.forEach(elem => {
+    tabs.forEach(elem =>{
         elem.addEventListener("click", (event) => {
             event.preventDefault(); /* ne suit pas l'action  il empêche sont fonctionnement natif de remonter en haut dans la page*/
             let filter = elem.getAttribute("data-filter");
