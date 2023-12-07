@@ -409,6 +409,10 @@ li{
     justify-content: center;
 }
 
+.hero__avatar img{
+    border-radius: 50% 20% / 10% 40%;
+}
+
 /* petit écran seulement*/
 @media screen and (max-width:749px) {
     /* sens espace entre les deux elle sont au même niveau et non parent, enfant. */
