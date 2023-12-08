@@ -104,3 +104,5 @@ function showProjectDetails(){
 }
 
 showProjectDetails();
+
+// les effets

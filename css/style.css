@@ -698,6 +698,7 @@ li{
     max-width: 50%;
     /*margin-bottom: 0;*/
     margin: 0;
+    opacity: 1;
 }
 
 /* pas dans le code de la vidéo */
@@ -707,8 +708,10 @@ li{
 
 /* ******************************** pour le Js *************************** */
 .portfolio .grid__item.hide{
-    display: none;
+    opacity: 0;
+    max-width: 0;
     /*border: solid 2px rgb(173, 20, 184);*/
+    /*border: solid 2px red;*/
 }
 
 /* class rajouter pour palier le bug */
@@ -771,8 +774,9 @@ li{
     background: aliceblue;
     text-transform: uppercase;
     position: relative; /* Parent */
-    box-shadow: 10px 5px 5px 1px var(--white-border-boutton);
+    box-shadow: 5px 5px 5px 0 var(--white-border-boutton);
     border: 1px solid var(--white-color-3);
+    overflow: hidden;
 }
 
 .card img{
@@ -798,7 +802,9 @@ li{
     z-index: 0;
     width: 100%;
     height: 100%;
-    display: none;
+    /*display: none;*/
+    top:110%;
+    transition: all 0.3s;
     /*border:solid 2px blueviolet;*/
 }
 
@@ -814,7 +820,8 @@ li{
 }
 /* fait réapparaître le +  en JS*/
 .card:hover .card__overlay{
-    display: block;
+    /*display: block;*/ 
+    top:0;
 }
 
 /* ******************************** JS  des card des projets *********************************** */
