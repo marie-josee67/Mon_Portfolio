@@ -811,6 +811,20 @@ li{
     height: 100%; /* toute la zone clickable */
     /*border:solid 2px blue;*/
 }
+/* fait réapparaître le +  en JS*/
+.card:hover .card__overlay{
+    display: block;
+}
+
+/* JS */
+.modal{
+    display: none;
+}
+
+/* pas d'espace entre ces deux class */
+.modal.show{
+    display: block;
+}
 
 /* ***************************************************** Contact **************************************************** */
 

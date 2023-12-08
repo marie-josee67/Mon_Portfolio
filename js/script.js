@@ -72,3 +72,19 @@ function tabsFilters (){
     })
 }
 tabsFilters ()
+
+// ********************** le + 
+
+function showProjectDetails(){
+    const links = document.querySelectorAll(".card__link"); /* cible le portfolio */
+    const modals = document.querySelectorAll(".modal"); /* cible la card */
+
+    links.forEach(elem =>{
+        elem.addEventListener("click", (event) => {
+            event.preventDefault(); /* ne suit pas l'action  il empêche sont fonctionnement natif de remonter en haut dans la page*/
+            document.querySelector(`[id=${elem.dataset.id}]`).classList.add("show");
+        });
+    })
+}
+
+showProjectDetails();
