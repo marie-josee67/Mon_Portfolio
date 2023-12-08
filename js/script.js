@@ -54,6 +54,9 @@ function tabsFilters (){
                 console.log("Hide Project:", filter);
                 projetParentNode.style.display = "none";
             }
+
+            // code plus propre
+            //filter != elem ? projetParentNode.style.display = "none": projetParentNode.style.display = "block";  // ne marche pas pour l'onglet tous les projets. 
         });
     };
 
