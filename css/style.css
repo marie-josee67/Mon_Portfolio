@@ -699,6 +699,11 @@ li{
     margin: 0;
 }
 
+/* pas dans le code de la vidéo */
+.portfolio .grid__item a {
+    border: solid 1px var(--white-color-3);
+}
+
 /* ******************************** pour le Js *************************** */
 .portfolio .grid__item.hide{
     display: none;
