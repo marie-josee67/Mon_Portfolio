@@ -76,13 +76,29 @@ tabsFilters ()
 // ********************** le + 
 
 function showProjectDetails(){
-    const links = document.querySelectorAll(".card__link"); /* cible le portfolio */
-    const modals = document.querySelectorAll(".modal"); /* cible la card */
+    const links = document.querySelectorAll(".card__link"); 
+    const modals = document.querySelectorAll(".modal"); 
+    const btns = document.querySelectorAll(".modal__close"); 
+    
+
+    // retirer les modales lors du click d'une autre card
+    const hideModals = () => {
+        modals.forEach(modal => {
+            modal.classList.remove("show");
+        });
+    }
 
     links.forEach(elem =>{
         elem.addEventListener("click", (event) => {
             event.preventDefault(); /* ne suit pas l'action  il empêche sont fonctionnement natif de remonter en haut dans la page*/
             document.querySelector(`[id=${elem.dataset.id}]`).classList.add("show");
+        });
+    })
+
+    // fermer la modale  avec le bouton
+    btns.forEach(btn =>{
+        btn.addEventListener("click", (event) => {
+            hideModals();
         });
     })
 }
