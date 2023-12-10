@@ -144,10 +144,10 @@ const observerIntersectionAnimation = () => {
         elem.style.width = "0";
         elem.style.transition = "width 1.6s";
 
-        // Ajoutez un élément span pour afficher le pourcentage
-        const percentageSpan = document.createElement("span");
-        percentageSpan.className = "percentage";
-        elem.appendChild(percentageSpan);
+        // Ajoutez un élément span pour afficher le pourcentage dans les barres des compétences
+        //const percentageSpan = document.createElement("span");
+        //percentageSpan.className = "percentage";
+        //elem.appendChild(percentageSpan);
     });
 
     let skillsObserver = new IntersectionObserver(function (entries, observer) {
@@ -156,11 +156,11 @@ const observerIntersectionAnimation = () => {
                 let elem = entry.target;
                 elem.style.width = elem.dataset.width + "%";
 
-                // Mettez à jour le texte du span avec le pourcentage
-                const percentageSpan = elem.querySelector(".percentage");
-                if (percentageSpan) {
-                    percentageSpan.textContent = elem.dataset.width + "%";
-                }
+                // Pour mettre le pourcentage dans les barres des compétences
+                //const percentageSpan = elem.querySelector(".percentage");
+                //if (percentageSpan) {
+                   // percentageSpan.textContent = elem.dataset.width + "%";
+                //}
             }
         });
     });

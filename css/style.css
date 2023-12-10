@@ -203,6 +203,9 @@ li{
 }*/
 
 .burger{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
     background: none;
     border:none;
     width: 3.5rem;
@@ -210,6 +213,7 @@ li{
     cursor:pointer;
     position: relative;
     margin-left: 1rem;
+    color: solid 2px red;
 }
 
 /* **** Création des barres du burger **** */
@@ -236,7 +240,7 @@ li{
 
 /* *** barre du bas *** */
 .burger .bar::after{
-    transform:translateY(3rem);
+    transform:translateY(-1.5rem);
 }
 
 /* petit écran burger*/
