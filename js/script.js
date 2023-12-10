@@ -105,7 +105,7 @@ function showProjectDetails(){
 
 showProjectDetails();
 
-// les effets scroller entre les sections si tous est sur une page.
+// *****************les effets scroller entre les sections si tous est sur une page.
 
 /*const observerIntersectionAnimation = () =>{
     const sections = document.querySelectorAll("section");
