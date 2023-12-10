@@ -656,9 +656,9 @@ li{
     }
 
     /* rajout pour que les deux colonnes soit aligner */
-    /*.skills h4, .skills p{
+    .skills h4, .skills p{
         margin: 0 0 .8rem 0;
-    }*/
+    }
 }
 
 /* **** Grille de droite **** */
@@ -667,22 +667,6 @@ li{
     border: solid .1rem var(--white-color-3);
     color: var(--white-1);
     margin-bottom: 1.3rem;
-}
-
-
-@media screen and (min-width:750px) {
-
-  /* Le margin 0 évite l'ascendance parent enfant */
-    .skills .grid__item {
-        max-width: 50%;
-        margin:0;
-        /*border: solid 2px red;*/
-    }
-
-    /* rajout pour que les deux colonnes soit aligner */
-    /*.skills h4, .skills p{
-        margin: 0 0 .8rem 0;
-    }*/
 }
 
 .skills .bar{
