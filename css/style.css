@@ -699,6 +699,7 @@ li{
     /*margin-bottom: 0;*/
     margin: 0;
     opacity: 1;
+    transition: all 1s ease; /* ne marche pas ici */
 }
 
 /* pas dans le code de la vidéo */
@@ -710,6 +711,10 @@ li{
 .portfolio .grid__item.hide{
     opacity: 0;
     max-width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.4s ease; /* ne marche pas ici */
+
     /*border: solid 2px rgb(173, 20, 184);*/
     /*border: solid 2px red;*/
 }

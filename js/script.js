@@ -105,4 +105,33 @@ function showProjectDetails(){
 
 showProjectDetails();
 
-// les effets
+// les effets scroller entre les sections si tous est sur une page.
+
+/*const observerIntersectionAnimation = () =>{
+    const sections = document.querySelectorAll("section");
+
+    // appel toutes les sections  mais moi j'ai différente page donc voir si cela pause une problème plus tard
+    sections.forEach((section, index) =>{
+        //console.log(index);
+        if (index === 0 ) return; // ainsi la première section ne sera pas prise pour l'effet de scroll
+        section.style.opacity = "0"; // faire tous disparaitre les sections non vouluent pour scroller
+        section.style.transition = "all 1.6s"; 
+    });
+
+    let sectionObserver = new IntersectionObserver(function (entries, observer){
+        entries.forEach(entry =>{
+            if(entry.isIntersecting){
+                let elem = entry.target;
+                elem.style.opacity = 1;
+                console.log(elem);
+            }
+        });
+    });
+
+    sections.forEach(section =>{
+        sectionObserver.observer(section)
+    });
+} 
+
+// on appel la fonction
+observerIntersectionAnimation ();*/
