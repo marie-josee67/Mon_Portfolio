@@ -135,3 +135,40 @@ showProjectDetails();
 
 // on appel la fonction
 observerIntersectionAnimation ();*/
+
+// ******************************************** barres des compétences
+const observerIntersectionAnimation = () => {
+    const skills = document.querySelectorAll(".skills .bar");
+
+    skills.forEach((elem, index) => {
+        elem.style.width = "0";
+        elem.style.transition = "width 1.6s";
+
+        // Ajoutez un élément span pour afficher le pourcentage
+        const percentageSpan = document.createElement("span");
+        percentageSpan.className = "percentage";
+        elem.appendChild(percentageSpan);
+    });
+
+    let skillsObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let elem = entry.target;
+                elem.style.width = elem.dataset.width + "%";
+
+                // Mettez à jour le texte du span avec le pourcentage
+                const percentageSpan = elem.querySelector(".percentage");
+                if (percentageSpan) {
+                    percentageSpan.textContent = elem.dataset.width + "%";
+                }
+            }
+        });
+    });
+
+    skills.forEach(skill => {
+        skillsObserver.observe(skill);
+    });
+}
+
+// Appeler la fonction pour déclencher l'observation
+observerIntersectionAnimation();
