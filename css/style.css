@@ -948,10 +948,23 @@ li{
     min-height: 20rem;
 }
 
+/* taille maximum de la fenêtre */
+#messsage {
+    max-width: 55rem;
+    max-height: 50rem;
+    width: 100%;
+}
+
+/* grand écran */
 @media screen and (min-width:750px) {
     .coucou{
         flex-wrap: wrap;
     }
+
+    /* taille maximum de la fenêtre */
+#messsage {
+    max-width: 60rem;
+}
 }
 
 /* bouton d'envoi */
