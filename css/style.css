@@ -458,6 +458,7 @@ li{
 }
 
 /* ***************************************************** A propos **************************************************** */
+
 .about .section-title{
     margin-top: 2.8rem;
 }
@@ -473,7 +474,7 @@ li{
 }
 
 @media screen and (min-width:750px) {
-  .about img {
+  .about .grid__item__profil img{
     /*padding-right: 3rem;*/
     border-radius: 50% 10%;
     box-shadow: 10px -5px 5px var(--white-color-4);
@@ -568,6 +569,62 @@ li{
     }
 }
 
+/* ** logo logiciel ** */
+.about .logiciel{
+    width: 100%;
+    /*border: solid 3px red;*/
+}
+
+.about .logiciel h2{
+    line-height: 5rem;
+   /*border: solid 3px rgb(18, 167, 35);*/
+}
+
+.about .notion__icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    /*border: solid 3px blue;*/
+}
+
+.about .html{
+    width: 4rem;
+}
+
+.about .css{
+    width: 4rem;
+}
+
+.about .php{
+    width: 4rem;
+}
+
+.about .js{
+    width: 4rem;
+}
+
+.about .figma{
+    width: 4rem;
+}
+
+.about .photopea{
+    width: 6rem;
+    height: 5rem;
+    border: solid 2px purple;
+}
+
+.about .boostrap{
+    width: 4rem;
+}
+
+.about .sass{
+    width: 4rem;
+}
+
+.about .sql{
+    width: 3.5rem;
+}
 /* ***************************************************** Services **************************************************** */
 
 /*.services{
