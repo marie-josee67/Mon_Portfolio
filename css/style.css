@@ -602,6 +602,7 @@ li{
 
 .about .js{
     width: 4rem;
+    color:#F0DB4F ;
 }
 
 .about .figma{
@@ -611,7 +612,7 @@ li{
 .about .photopea{
     width: 6rem;
     height: 5rem;
-    border: solid 2px purple;
+    /*border: solid 2px purple;*/
 }
 
 .about .boostrap{
@@ -620,6 +621,8 @@ li{
 
 .about .sass{
     width: 4rem;
+    color:#CD6799;
+    /*border: solid 2px red;*/
 }
 
 .about .sql{
