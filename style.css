@@ -41,7 +41,7 @@ footer{
     font-size: 1.4rem;
     text-transform: capitalize;
     font-family:'Times New Roman', Times, serif;
-    border: 2px solid purple;
+    /*border: 2px solid purple;*/
 }
 
 h2{
@@ -398,7 +398,7 @@ button:after {
 
 #contact{
     width: 100vw;
-    height: 100vh;
+    height: 88vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
