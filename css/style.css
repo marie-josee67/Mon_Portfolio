@@ -575,6 +575,7 @@ li{
 /* ** logo logiciel ** */
 .about .logiciel{
     width: 100%;
+    padding-left: 10px;
     /*border: solid 3px red;*/
 }
 
