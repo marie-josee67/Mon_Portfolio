@@ -11,6 +11,7 @@
     --white-bg-nav: rgba(240, 248, 255, 0.495);
     --white-bg-1:#0082b7;
     --white-bg-2:linear-gradient(to left top, #1f368b, #005ead, #0082b7, #00a1ad, #00be9a, #4cbe71, #7eba43, #aeb100, #d28c04, #e26335, #dc3f5d, #bc3381);
+    --white-bg-3: rgb(72, 155, 17);
     --white-color-2:#aeb100;
     --white-color-1:#e26335;
     --white-color-3:#333;
@@ -33,7 +34,8 @@ puis flèche du bas remplacer, mettre la variable vouluent ensuite remplacer tou
 
 html{
     font-size: 62.5%; /* cela redéfinit la font-size de base à 10px soit 1rem */
-    background-image: var(--white-bg-2);
+    /*background-image: var(--white-bg-2);*/ /*fond d'écran couleur*/
+    background-color: var(--white-bg-3);
 }
 
 body{
