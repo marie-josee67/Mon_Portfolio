@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="Fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agence web alsacienne a Scherwiller. Agence de création de site internet, site vitrine. Page d'accueil">
+
+    <!-- typo liens universel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- typo familes -->
+    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Gabriela&family=Meow+Script&subset=latin,latin-ext&display=swap" 
+    rel="stylesheet">
+
+    <!-- Boostrap Jquery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- liens CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/realisation.css">
+
+    <title>Projets site web à Scherwiller</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg contNav">
+            <div class="container navigation">
+                <div class="logo">
+                    <!-- Logo qui renvoie à la page d'accueil -->
+                    <a class="navbar-brand logo" href="./index.html">
+                        <img src="./img/logo/Fichier_9.png" id="logoNavBarre" class="logoComplet" alt="logo">
+                    </a>
+                </div>
+            
+                <!-- Burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="onglet">
+                    <!-- Navbar Onglet -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./agence.html">L'agence</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./realisation.html">Réalisation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Bouton Dark Mode -->
+                <div class="darkMode">
+                    <button class="dark-mode-button" onclick="boutonDarkMode()" id="toggle-theme-btn">
+                        <i id="mode-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ****************************************************** réalisations *******************************************************-->
+        <!-- projets -->
+        <section class="container-fluid realisation" id="reaRea">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>Nos réalisations:</h1>
+                    <p>Chez Cerfweb,<span> agence de développement web</span> située à Scherwiller, nous sommes fiers de vous présenter un aperçu de nos projets récents. Notre équipe d'experts passionnés met tout en œuvre pour créer des <span> solutions web</span> innovantes et sur mesure, adaptées aux besoins uniques de chaque client.</p>
+                    <p>Dans cette section, vous pourrez découvrir quelques-unes de nos réalisations les plus marquantes. Chaque projet que nous menons est le fruit d'une collaboration étroite avec nos clients, permettant de donner vie à leurs idées tout en respectant les meilleures pratiques du secteur. Nous croyons fermement que la clé d'un projet réussi réside dans l'écoute et la compréhension des attentes de nos clients.</p> 
+                        
+                    <p>Nos réalisations couvrent une large gamme de secteurs d'activité, allant des <span> sites vitrine</span> aux plateformes  <span>e-commerce</span> en passant par des <span> applications web personnalisées</span>. Chaque site que nous développons est conçu pour être non seulement esthétique, mais également fonctionnel, optimisé pour le <span> référencement</span> et adapté à tous les appareils. En mettant l'accent sur l'expérience utilisateur, nous veillons à ce que chaque visiteur puisse naviguer facilement et trouver rapidement les informations qu'il recherche.</p> 
+                        
+                    <p> Nous sommes particulièrement fiers de la diversité des projets que nous avons réalisés. Chacun d'eux représente un défi unique que notre équipe a su relever avec créativité et expertise. Que vous soyez une petite entreprise souhaitant établir une présence en ligne ou une grande organisation cherchant à moderniser son site, nous avons les compétences nécessaires pour vous accompagner.</p> 
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="projetRealisation">
+                <div class="row g-0 vignette">
+                    <!-- projet 1 -->
+                    <div class="col-md-4 projet"><!-- projet => class perso -->
+                        <!-- Carte du projet -->
+                        <div class="card carteRea" data-bs-toggle="modal" data-bs-target="#projet1"> <!-- Ajout des attributs au div de la carte -->
+                            <!-- carte => class perso -->
+                            <img src="./img/projet/projet_photopea_2022.jpg" class="card-img img-fluid" alt="incrustation d'images pour former une seule image">
+                            <!-- img => class perso -->
+                            <div class="card-body">
+                                <h3 class="card-title">Création d'une image</h3>
+                            </div>
+                        </div>
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="projet1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content tailleFenetre">
+                                    <div class="modal-header">
+                                        <h4 class="modal__title h2">Création d'Automne</h4>
+                                        <button class="btnClose" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body modalRea">
+                                        <img class="modalImg" src="./img/projet/projet_photopea_2022.jpg" alt="Image montrant une composition graphique réalisée avec Photopea">
+                                        <p class="calendrier">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i>Année : 2022</i>
+                                        </p>
+                                        <p>
+                                            Projet réalisé d'une image, avec les connaissances apprises lors de ma formation chez Élan.
+                                        </p>
+                                        <h5 class="h3">Informations</h5>
+                                        <p>
+                                            Ce travail m'a permis de faire le point sur ce que j'ai appris lors de ma formation.
+                                        </p>
+                                        <h5 class="h3">Technologie</h5>
+                                        <ul>
+                                            <li>Photopea</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- projet 2-->
+                    <div class=" col-md-4 projet"><!-- projet => class perso -->
+                        <div class="card carteRea" data-bs-toggle="modal" data-bs-target="#projet2"> 
+                            <img src="./img/projet/sup_image.JPG" class="card-img img-fluid" alt="incrustation d'images pour former une seule image">
+                            <div class="card-body">
+                                <h3 class="card-title">Jeux sup image</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal fade " id="projet2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content tailleFenetre">
+                                    <div class="modal-header">
+                                        <h4 class="mondal__title h2" >Jeux sup image</h4>
+                                        <button class="btnClose" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body modalRea">
+                                        <img class="modalImg" src="./img/projet/sup_image.JPG" alt="">
+                                        <p class="calendrier">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i>Année : 2022</i>
+                                        </p>
+
+                                        <p>
+                                            Projet réaliser lors de ma formation chez Élan Formation de Strasbourg.
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+
+                                        <p>
+                                            Ce travail à été réaliser pendant un cour.
+                                        </p>
+
+                                        <h5 class="h3">Technologie</h5>
+
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- projet 3 -->
+                    <div class="col-md-4 projet"><!-- projet => class perso -->
+                        <div class="card carteRea" data-bs-toggle="modal" data-bs-target="#projet3"> 
+                            <img src="./img/projet/carte_de_visite_recto.png " class="card-img img-fluid" alt="#">
+                            <div class="card-body">
+                                <h3 class="card-title">Carte de visite</h3>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade " id="projet3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content tailleFenetre">
+                                    <div class="modal-header">
+                                        <h4 class="mondal__title h2" >Carte de visite</h4>
+                                        <button class="btnClose" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body modalRea">
+                                        <img class="modalImg" src="./img/projet/carte_de_visite_recto.png" alt="carte de visite perso">
+                                        <p class="calendrier">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i>Année : 2022</i>
+                                        </p>
+
+                                        <p>
+                                            Projet réaliser d'une carte de visite, avec les connaissances apprise lors de ma formation chez Élan.
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+
+                                        <p>
+                                            Ce travail ma permit de mettre en pratique les connaissance apprise lors de cette formation.
+                                        </p>
+
+                                        <h5 class="h3">Technologie</h5>
+
+                                        <ul>
+                                            <li>Photopea</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 vignette">
+                    <!-- projet 4 -->
+                    <div class=" col-md-4 projet"><!-- projet => class perso -->
+                        <div class="card carteRea" data-bs-toggle="modal" data-bs-target="#projet4"> 
+                            <img src="./img/projet/Fiche_metier_Web_Design.JPG" class="card-img img-fluid" alt="#">
+                            <div class="card-body">
+                                <h3 class="card-title">Site web fictif</h3>
+                            </div>
+                        </div>
+                    
+                        <div class="modal fade " id="projet4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content tailleFenetre">
+                                    <div class="modal-header">
+                                        <h4 class="mondal__title h2" >Site web fictif</h4>
+                                        <button class="btnClose" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body modalRea">
+                                        <img class="modalImg" src="./img/projet/Fiche_metier_Web_Design.JPG" alt="">
+                                        <p class="calendrier">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i>Année : 2023</i>
+                                        </p>
+
+                                        <p>
+                                            Projet perso de réalisation d'un site web explicant la recherche effectue et le choix final pour le choix de ma futur reconversion professionnel,projet réaliser lors de ma formation Num & Boost au CCICampus.
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+
+                                        <p>
+                                            Ce travail ma permit de faire le point sur mes compétences au tous début de la formation.
+                                        </p>
+
+                                        <h5 class="h3">Technologie</h5>
+
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- projet 5 -->
+                    <div class=" col-md-4 projet"><!-- projet => class perso -->
+                        <div class="card carteRea" data-bs-toggle="modal" data-bs-target="#projet5"> 
+                            <img src="./img/projet/Logo-blanc-3.jpg"  class="card-img img-fluid" alt="#">
+                            <div class="card-body">
+                                <h3 class="card-title">Association musical fictif</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="modal fade " id="projet5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content tailleFenetre">
+                                    <div class="modal-header">
+                                        <h4 class="mondal__title h2" >Association musical fictif</h4>
+                                        <button class="btnClose" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body modalRea">
+                                        <img class="modalImg" src="./img/projet/Logo-blanc-3.jpg" alt="">
+                                        <p class="calendrier">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i>Année : 2024</i>
+                                        </p>
+
+                                        <p>
+                                            Projet de maquettage d'un site web associatif réaliser pendant ma formation DWWM au CCICampus de Colmar.
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+
+                                        <p>
+                                            Ce travail ma permit de faire le point, sur ce que j'ai appris dans se domaine.
+                                        </p>
+
+                                        <h5 class="h3">Technologie</h5>
+
+                                        <ul>
+                                            <li>Figma</li>
+                                            <li>Photoshop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- projet 6 -->
+                    <div class=" col-md-4 projet"><!-- projet => class perso -->
+                        <div class="card carteRea" data-bs-toggle="modal" data-bs-target="#projet6"> 
+                            <img src="./img/projet/Projet_restaurant_fictif_le_quai_des_machine.PNG"  class="card-img img-fluid" alt="#">
+                            <div class="card-body">
+                                <h3 class="card-title">Restaurant site fictif</h3>
+                            </div>
+                        </div>
+                        <div class="modal fade " id="projet6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content tailleFenetre">
+                                    <div class="modal-header">
+                                        <h4 class="mondal__title h2" >Restaurant site fictif</h4>
+                                        <button class="btnClose" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body modalRea">
+                                        <img class="modalImg" src="./img/projet/Projet_restaurant_fictif_le_quai_des_machine.PNG" alt="">
+                                        <p class="calendrier">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i>Année : 2022</i>
+                                        </p>
+
+                                        <p>
+                                            Projet réaliser en équipe de trois, avec les connaissances apprisent lors de ma formation chez Élan.
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+
+                                        <p>
+                                            Ce travail ma permit de mettre en pratique, sur ce que j'ai appris. Mais aussi les compromis du travail en équipe .
+                                        </p>
+
+                                        <h5 class="h3">Technologie</h5>
+
+                                        <ul>
+                                            <li>Figma</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JS</li>
+                                            <li>PHP</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ****************************************************** un projet *******************************************************-->
+        <section class="container-fluid reaProjet" id="reaContact">
+            <div class="row g-0 projetTtile">
+                <div class="col-md-1"></div>
+                <div class="col-10">
+                    <h2 class="speProjet">Un projet à germer ? C’est par ici</h2>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-8">
+                    <p>Avez-vous un projet en tête ? Vous souhaitez donner vie à vos idées ? N’hésitez pas à nous contacter. Nous serions ravis d’échanger avec vous et d’explorer comment nous pouvons collaborer pour transformer votre vision en réalité. Ensemble, faisons germer votre projet et atteignons de nouveaux sommets !</p>
+                </div>
+                <div class="col-md-2">
+                    <button onclick="window.location.href='./contact.html'">Contact</button>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid footerBis">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="footerTexte"><a href="./politiqueConfidentialite.html">Politique de confidentialitée</a></div>  
+                    <div class="footerTexte speciauxFooter"><a href="./mentionLegal.html">Mentions légales</a></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footerTexte"><a href="./planDuSite.html">Plan du site</a></div>
+                    <p class="footerTexte speciauxFooter">&copy;2024 Cerfweb</p>
+                </div>
+                <div class="col-md-4 footerSpeciaux">
+                     <div class="footerTexte"><p>Suivez-nous</p></div>
+                     <div class="row g-0">
+                        <a href="#" class="col-4"><i class="fa-brands fa-facebook-f footerTexte facebook"></i></a>
+                        <a href="#" class="col-4"><i class="fa-brands fa-linkedin-in footerTexte"></i></a>
+                        <a href="#" class="col-4" > <i class="fa-brands fa-x-twitter footerTexte"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </footer>
+    
+     <!-- boostrap Js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="./js/script.js"></script>
+</body>
+</html>

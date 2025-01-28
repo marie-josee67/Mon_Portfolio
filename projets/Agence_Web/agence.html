@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="Fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agence web alsacienne a Scherwiller. Agence de création de site internet, site vitrine. Page d'accueil">
+
+    <!-- typo liens universel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- typo familes -->
+    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Gabriela&family=Meow+Script&subset=latin,latin-ext&display=swap" 
+    rel="stylesheet">
+
+    <!-- Boostrap Jquery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- liens CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/agence.css">
+
+    <title>Agence web à Scherwiller</title>
+</head>
+<body >
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg contNav">
+            <div class="container navigation">
+                <div class="logo">
+                    <!-- Logo qui renvoie à la page d'accueil -->
+                    <a class="navbar-brand logo" href="./index.html">
+                        <img src="./img/logo/Fichier_9.png" id="logoNavBarre" class="logoComplet" alt="logo">
+                    </a>
+                </div>
+                <!-- Burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="onglet">
+                    <!-- Navbar Onglet -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./agence.html">L'agence</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./realisation.html">Réalisation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Bouton Dark Mode -->
+                <div class="darkMode">
+                    <button class="dark-mode-button" onclick="boutonDarkMode()" id="toggle-theme-btn">
+                        <i id="mode-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ****************************** accroche *************************** -->
+        <div class="container-fluid agenceAccroche" id="agenceAccroche">
+            <div class="row g-0 accrocheElement">
+                <div class="col-md-1"></div>
+                <div class="col-md-7 agenceTexte" >
+                    <p>Bienvenue chez Cerfweb, votre partenaire dédié à la <span>création de sites internet</span> adaptés à vos besoins. Située à Scherwiller, en Alsace, notre agence est née de ma passion pour le développement web et d’un désir profond d’aider les entreprises à se démarquer dans le monde <span> numérique</span>.</p>
+                </div>
+                <div class="col-md-3 accrocheCerf">
+                    <img src="./img/logo/Fichier_6.png" id="image3" class="cerf" alt="">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <!-- ***************************** Histoire **************************** -->
+        <section class="container-fluid histoire" id="agenceHistoire">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>Son Histoire</h1>
+                    <p>Après avoir obtenu mon diplôme de Bac +2 en Développement Web et Web Mobile, j'ai réalisé qu'il manquait une approche personnalisée et attentive dans le secteur. C'est pourquoi j'ai fondé Cerfweb : pour offrir un service sur mesure, axé sur vos objectifs et vos aspirations.</p>
+                    <p>Chaque entreprise a une histoire unique et des besoins spécifiques. Chez Cerfweb, nous croyons fermement que la clé d'un projet réussi réside dans la compréhension approfondie de vos attentes. Que vous soyez une petite entreprise en démarrage, un artisan cherchant à élargir sa clientèle, ou une société bien établie souhaitant <span> moderniser son image en ligne</span>, nous sommes là pour vous écouter et vous accompagner.</p> 
+                    <p>Notre approche commence par une discussion ouverte pour comprendre vos besoins, vos objectifs et votre vision. Nous vous proposons ensuite des solutions innovantes et adaptées, que ce soit un site vitrine pour présenter votre activité, une boutique en ligne pour vendre vos produits ou une <span>application web</span> pour améliorer votre service.</p> 
+                    <p>À chaque étape, notre priorité est de vous fournir un service de qualité, en veillant à ce que votre site soit non seulement esthétique et fonctionnel, mais aussi optimisé pour attirer vos clients cibles. Nous restons à l’écoute et disponibles pour répondre à toutes vos questions, car votre satisfaction est au cœur de notre mission.</p>
+                    <p>Ensemble, faisons de votre <span> projet web</span> une réussite qui reflète votre identité et répond à vos ambitions. Chez Cerfweb, votre succès est notre fierté.</p> 
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+        <!-- ***************************** Valeurs ******************************-->
+        <section class="container-fluid valeurs" id="agenceValeurs">
+            <div class="row g-0">
+                <div>
+                 <h2>Ces valeurs</h2>
+                 <div class="row g-0">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 blockValeur">
+                        <h3 class="titleValeur">L’environnement</h3>
+                        <p>Nous valorisons un environnement de travail consultatif et participatif, où chaque membre de l’équipe se sent respecté et impliqué. Nous nous engageons à favoriser le bien-être de nos employés, car nous croyons qu’un personnel épanoui est la clé de notre succès collectif.</p>
+                    </div>
+
+                    <div class="col-md-4 blockValeur specialValeur">
+                        <h3 class="titleValeur">Formations des équipes</h3>
+                        <p>Chez Cerfweb, nous sommes convaincus que la formation continue est essentielle pour rester à la pointe des <span> dernières tendances</span>. Nos équipes bénéficient régulièrement de formations afin de développer leurs compétences et d’offrir le meilleur à nos clients.</p>
+                    </div>
+
+                    <div class="col-md-3 blockValeur">
+                        <h3 class="titleValeur">Réalisation 100% personnalisée.</h3>
+                        <p>Nous nous engageons à créer des solutions entièrement personnalisées pour nos clients. Chaque projet est unique : nous ne travaillons jamais avec des maquettes prédéfinies, mais nous concevons des sites et des applications sur mesure, adaptés à vos objectifs, enjeux et budget.</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                 </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***************************** Équipes ******************************-->
+        <!--  Organigramme -->
+        <section class="container-fluid employer" id="agenceEquipe"> <!-- employer => class perso -->
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-10">
+                    <h2>Notre équipe</h2>
+                    <p class="employerTexte">L'organigramme de notre <span> agence web</span> reflète une équipe dynamique et complémentaire, où chaque membre joue un rôle essentiel dans la réussite de nos projets. Du développement web à la <span> création de design</span>, en passant par la <span> gestion de projet</span>, nos experts collaborent étroitement pour offrir des solutions innovantes et sur mesure à nos clients.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row g-0  zoneEmployer"> <!-- zoneEmployer => class perso -->
+                <!-- cards employer-->
+                <div class="col-md-4 colonneEmployer gaucheEmployer"> <!-- colonneEmployer => class perso -->
+                    <div class="card cardAgence"> <!-- cardAgence => class perso-->
+                        <img src="./img/employer/commercial.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Commercial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 colonneEmployer">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/chef_de_projet.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Chef de projet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 colonneEmployer droiteEmployer">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/agent_d_entretien.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Responsable client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- deuxième lignes-->
+                <div class="col-md-4 colonneEmployer gaucheEmployer ">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/UX_UI.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Ux / UI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 colonneEmployer">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/gérante.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Gérante</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 colonneEmployer droiteEmployer">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/responsable_client.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Agent d'entretien</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- troisième lignes-->
+                <div class="col-md-4 colonneEmployer gaucheEmployer">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/developpeur_frontend.jpg" class="card-img-top" alt="..."> <!-- tailleImg => class perso-->
+                        <div class="card-body">
+                            <p class="card-text">Développeur Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 colonneEmployer ">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/agent_adminitratif.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Assistante administratif</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 colonneEmployer droiteEmployer">
+                    <div class="card cardAgence">
+                        <img src="./img/employer/developpeur_backend.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Developpeur Backend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- ***************************** Pourquoi nous ******************************-->
+        <section class="container-fluid pourquoiNous" id="agenceChoix">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h2>Pourquoi choisir Cerfweb ?</h2>
+                    <p>Notre expertise locale est à votre service. En tant que PME régionale en pleine croissance, nous mettons un point d’honneur à fournir qualité et efficacité, des valeurs qui font partie de nos racines. Nos équipes, composées d’experts passionnés, sont prêtes à vous accompagner tout au long de votre projet.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row g-0 optionPourquoi">
+               <div class="col-md-4 choix">
+                    <h3>Notre expertise, à votre service !</h3>
+                    <p>Une expertise local sur mesure pour vos besoins.</p>
+               </div>
+               <div class="col-md-4 choix">
+                   <h3>Des mains d’expert.</h3>
+                   <p>En temps que petite entreprise régionale en net croissance. Qualité et éfficacité fait partie de nos racines.</p>
+                </div>
+            
+                <div class="col-md-4 choix" >
+                   <h3>On vous transmet la Bretzel</h3>
+                   <p>Un soutien continu et une formation approfondie pour vos employer.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ***************************** rejoigner nous ******************************-->
+        <section class="container-fluid rejoignerNous" id="agenceNous">
+            <div class="row g-0">
+                <div>
+                 <h2>Rejoinez-nous !</h2>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 imgRejoind">
+                    <img src="./img/groupe_bis.jpg" alt="" class="imgNous">
+                </div>
+
+                <div class="col-md-4 offres">
+                    <!-- offre 1-->
+                    <div class="offreEmploi">
+                        <p>Developpeur Frontend junior</p>
+                        <p>CDD 6 mois</p>
+                        <button onclick="window.location.href='./contact.html';">Postuler</button>  
+                    </div>
+
+                    <!-- offre 2-->
+                    <div class="offreEmploi">
+                        <p>Developpeur Backend junior</p>
+                        <p>CDD 10 mois</p>
+                        <button onclick="window.location.href='./contact.html';"> Postuler</button>  
+                    </div>
+
+                    <!-- offre 3-->
+                    <div class="offreEmploi">
+                        <p>Data Analyste Expert</p>
+                        <p>CDI</p>
+                        <button onclick="window.location.href='./contact.html';">Postuler</button>  
+                    </div>
+
+                    <div class="offreEmploi">
+                        <button onclick="window.location.href='./contact.html';">Candidature spontanée</button>  
+                    </div>
+                </div>
+
+                <div class="col-md-3 imgRejoind">
+                    <img src="./img/accord.jpg"  alt="" class="imgNous">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid footerBis">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="footerTexte"><a href="./politiqueConfidentialite.html">Politique de confidentialitée</a></div>  
+                    <div class="footerTexte speciauxFooter"><a href="./mentionLegal.html">Mentions légales</a></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footerTexte"><a href="./planDuSite.html">Plan du site</a></div>
+                    <p class="footerTexte speciauxFooter">&copy;2024 Cerfweb</p>
+                </div>
+                <div class="col-md-4 footerSpeciaux">
+                     <div class="footerTexte"><p>Suivez-nous</p></div>
+                     <div class="row g-0">
+                        <a href="#" class="col-4"><i class="fa-brands fa-facebook-f footerTexte facebook"></i></a>
+                        <a href="#" class="col-4"><i class="fa-brands fa-linkedin-in footerTexte"></i></a>
+                        <a href="#" class="col-4" > <i class="fa-brands fa-x-twitter footerTexte"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </footer>
+    
+     <!-- boostrap Js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="./js/script.js"></script>
+</body>
+</html>

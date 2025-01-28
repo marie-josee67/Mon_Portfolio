@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="Fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agence web alsacienne a Scherwiller. Agence de création de site internet, site vitrine. Page d'accueil">
+
+    <!-- typo liens universel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- typo familes -->
+    <!-- liens d'origine-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Gabriela&family=Meow+Script&display=swap" rel="stylesheet">-->
+    <!-- Lien optimisé pour le français -->
+    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Gabriela&family=Meow+Script&subset=latin,latin-ext&display=swap" 
+    rel="stylesheet"> <!-- subset=latin,latin-ext : Cela inclut les caractères nécessaires pour l'alphabet latin de base et l'extension latine, qui couvre tous les caractères spéciaux utilisés en français (comme les accents : é, à, ç, etc.).
+    display=swap :le texte est affiché immédiatement avec une police par défaut -->
+    <!-- Boostrap Jquery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- liens CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/accueil.css">
+    <title>Création de site Web à Scherwiller</title>
+</head>
+<body >
+    <header>
+        <!-- test -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg contNav">
+            <div class="container navigation">
+                <div class="logo">
+                    <!-- Logo qui renvoie à la page d'accueil -->
+                    <a class="navbar-brand logo" href="./index.html">
+                        <img src="./img/logo/Fichier_9.png" id="logoNavBarre" class="logoComplet" alt="logo">
+                    </a>
+                </div>
+                <!-- Burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="onglet">
+                    <!-- Navbar Onglet -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./agence.html">L'agence</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./realisation.html">Réalisation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Bouton Dark Mode -->
+                <div class="darkMode">
+                    <button class="dark-mode-button" onclick="boutonDarkMode()" id="toggle-theme-btn">
+                        <i id="mode-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- mention obligatoire pour pévenir les utilisateur car le site va être héberger-->
+        <section class="container-fluid fictif">
+            <div class="row g-0">
+                <h2 class="fictifTitle">Site fictif</h2>
+            </div>
+        </section>
+
+<!-- *********************************** Section accroche **************************************** -->
+        <section class=" container-fluid accroche" id="accueilAccroche">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>Bienvenue chez</h1>
+                    <div class="logoAccroche" >
+                        <img id="image2" class="cerfwebLogo" src="./img/logo/Fichier_3.png" alt="logo avec le nom de l'entreprise">
+                    </div>
+                </div>
+                <p class="texteAccroche">Votre partenaire pour un <span> site internet</span> sur mesure !</p>
+                <div class="col-md-1"></div>
+
+            </div>
+        </section>
+
+<!-- ********************************* service urgence ****************************************** -->
+        <div class=" container-fluid urgence" id="accueilUrgence">
+            <div class="row g-0 d-flex align-items-center d-flex justify-content-around">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 ">
+                    <button onclick="window.location.href='./realisation.html';">Voir nos réalisations</button>
+                </div>
+                <div class="col-md-2 urgences">
+                    <p>Devis en moins de <em>48 h</em></p>
+                </div>
+                <div class="col-md-4 ">
+                    <button onclick="window.location.href='./contact.html';">
+                        Devis gratuit
+                    </button>  
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+
+<!-- ********************************* équipe  ****************************************** -->
+        <section class="container-fluid photos" id="accueilPhotos">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-10 textPhoto"> 
+                    <h2 class="titlePhoto">Chez Cerfweb, nous sommes une équipe d'experts passionnés!</h2>
+                    <p>Par le numérique, dédiée à donner vie à vos <span> projets web</span>. Que vous envisagiez une création de site entièrement </p>
+                    <p class="para">nouvelle ou une <span> refonte de votre site</span> existant, nous sommes là pour vous accompagner à chaque étape.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row g-0">
+                    <!-- première ligne -->
+                <div class="row g-0 photosAccueil">
+                    <div class="col-md-1"></div>
+                    <div class=" col-md-5 imgPhotos">
+                        <img src="./img/environnemen_travail/groupe.jpg" class="img-fluid " alt="">
+                    </div>
+                    <div class=" col-md-5 imgPhotosSecond">
+                        <img src="./img/groupe_bis.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <!-- deuxième ligne -->
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 imgPhotos">
+                        <img src="./img/environnemen_travail/mains.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-5 d-none d-md-block imgPhotosSecond">
+                        <img src="./img/environnemen_travail/chat.jpg" class="img-fluid " alt=""> <!-- faire disparaitre l'image en mobile et apparaitre en destock-->
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </section>
+
+<!-- ********************************* service Projets ****************************************** -->
+        <section class="container-fluid ideer"  id="accueilProjets">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h2>Vous avez un projet de <span>site web</span> ?</h2>
+                    <p>Notre équipe de professionnels met son savoir-faire à votre service pour vous offrir des solutions personnalisées qui répondent à vos besoins spécifiques.</p>
+                    <p>Avec notre expertise en <span> développement web</span> sur mesure, nous vous aidons à relever vos défis et à réaliser vos rêves numériques.</p>
+                    <button onclick="window.location.href='./agence.html';">
+                        Découvrir l'agence
+                    </button>                    
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+<!-- ********************************* service Réalisations ****************************************** -->
+
+        <section class="container-fluid realisation" id="accueilRealisations">
+            <div class="row g-0"> <!-- 0 goutière-->
+                <div>
+                    <h2>Nos réalisations</h2>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 reaGauche">
+                    <div>
+                        <p>Nous avons eu le privilège d’accompagner de nombreuses entreprises dans leur <span> transformation digitale</span>, en leur fournissant des services variés, allant de la conception des <span> sites vitrine</span> à des plateformes <span> e-commerce</span> sophistiquées. Chacune de nos réalisations est le fruit d’un travail collaboratif et d’une écoute attentive de vos attentes.</p>
+                    </div>
+                <div class="col-md-5 boutonRea text-center">
+                    <button onclick="window.location.href='./realisation.html';">
+                        Voir nos réalisations
+                    </button>   
+                </div>
+                <div class="col-md-1"></div>
+                </div>
+
+                <!-- carroussel -->
+                <div id="carouselExampleSlidesOnly" class="col-md-6 carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/projet/Mousson.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/projet/Organia.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/projet/projet_photopea_2022.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/projet/Projet_restaurant_fictif_le_quai_des_machine.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/projet/Gambit_girs.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ********************************** contact ****************************-->
+        <section class="container-fluid accueilContact" id="accueilContact">
+            <div class="row g-2">
+                <div class="col-md-1"></div>
+                <img src="./img/developpement.jpg" class="col-md-3 " alt="">
+                <div class="col-md-7  my-auto">
+                    <div class="texteContact">
+                        <h2>Prê(e) à créer votre projet ?</h2>
+                        <p>Prêt(e) à donner vie à votre projet ? Nous vous invitons à découvrir notre portfolio pour apprécier la diversité et la qualité de nos réalisations. Notre objectif est de <span> créer des sites </span> qui non seulement attirent l’attention, mais qui convertissent également les visiteurs en clients fidèles.</p>
+                        <p></p>
+                    </div>
+                    <div class="boutonContact">
+                        <button onclick="window.location.href='./contact.html';" class="textBouttonContact">
+                            Nous contacter
+                        </button>  
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+
+        <!-- ********************************** services ****************************-->
+        <section class="container-fluid servicesAccueil" id="accueilService">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 Newsletter">
+                    <img id="service"  src="./img/logo/Fichier_3.png"  alt="">
+                    <p>Newsletter</p>
+                    <div class="newsletterZone">
+                        <form class="row g-0">
+                            <div class="col-10">
+                                <label for="email" class="visually-hidden">Email</label>
+                                <input type="email" class="form-control emailNewsletter" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn boutonNewsletter" onclick="alert('envoie impossible !')">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 texteService">
+                    <P>Si vous avez des questions ou si vous souhaitez discuter de votre projet, n’hésitez pas à nous contacter. Prenez rendez-vous avec notre équipe, et ensemble, faisons de votre vision une réalité !</P>
+                </div>
+                <div class="col-md-3 infoService ContacterAgence">
+                    <div class="nousContacter">
+                        <h2>Nous contacter</h2>
+                        <p>lundi - vendredi </p>
+                        <p>8h -17 h</p>
+                    </div>
+                    <div>
+                        <button id="telephoneBoutton" class="buttonService boutonTel" onclick="magieNumero()">Numéro de téléphone</button>
+                    </div>
+                    <div class="agenceService">
+                        <h2 class="nousContacterTitle">Agence</h2>
+                        <p>150, rue du paradis</p>
+                        <p>67750 Scherwiller</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid footerBis">
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="footerTexte"><a href="./politiqueConfidentialite.html">Politique de confidentialitée</a></div>  
+                    <div class="footerTexte speciauxFooter"><a href="./mentionLegal.html">Mentions légales</a></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footerTexte"><a href="./planDuSite.html">Plan du site</a></div>
+                    <p class="footerTexte speciauxFooter">&copy;2024 Cerfweb</p>
+                </div>
+                <div class="col-md-4 footerSpeciaux">
+                     <div class="footerTexte"><p>Suivez-nous</p></div>
+                     <div class="row g-0">
+                        <a href="#" class="col-4"><i class="fa-brands fa-facebook-f footerTexte facebook"></i></a>
+                        <a href="#" class="col-4"><i class="fa-brands fa-linkedin-in footerTexte"></i></a>
+                        <a href="#" class="col-4" > <i class="fa-brands fa-x-twitter footerTexte"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </footer>
+     <!-- boostrap Js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="./js/script.js"></script>
+     <script src="./js/boutonNumero.js"></script>
+</body>
+</html>

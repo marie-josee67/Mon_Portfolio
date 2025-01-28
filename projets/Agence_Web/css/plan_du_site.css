@@ -1,0 +1,50 @@
+/* barre de navigation */
+.ajustement{
+    padding: 0;
+    margin: 0;
+}
+
+.contNav{
+    margin: 0;
+    padding: 0;
+    /*border:2px dashed gold;*/
+}
+
+#navbarNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* desktop */
+@media (min-width: 769px){
+    #navbarNav{
+        justify-content: space-around;
+    }
+}
+
+/* bouton retour */
+.retour{
+    padding: 0.5rem 1rem;
+    /*border: 2px solid green;*/
+}
+
+.retourX{
+    font-size: 1.5rem;
+    /*border:2px solid purple;*/
+}
+
+/* sommaire*/
+.sommaire{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    line-height: 1.8rem; /* écart entre deux lignes */
+    font-weight: 500; /* graisse de la typo */
+    /*border: 2px solid red;*/
+}
+
+.sommaire ul li{
+    list-style: none;  /* enlève les puces */
+}

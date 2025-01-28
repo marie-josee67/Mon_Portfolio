@@ -1,0 +1,183 @@
+/* ************* bg sections ************* */
+.agenceAccroche, .valeurs, .pourquoiNous{
+    background-color: var(--bg-light);
+    padding: 1rem 2rem;
+}
+
+.histoire, .employer, .rejoignerNous{
+    background-color: var(--bg-dark-2);
+    padding: 1rem 2rem;
+}
+
+/* ************* accroche ************* */
+.agenceTexte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid green;*/
+}
+
+.accrocheCerf{
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid red;*/
+}
+
+.cerf{
+    width: 190px;
+    height: 240px;
+    /*border: 2px solid violet;*/
+}
+
+/* desktop */
+@media (min-width: 769px){
+    .cerf{
+        width: 287px;
+        height: 373px;
+        /*border: 2px solid violet;*/
+    }
+}
+
+/* ************* valeurs ************* */
+
+.specialValeur{
+    width: 100%;
+    padding: 1.5rem 0;
+    /*border: 2px solid green;*/
+}
+/* desktop */
+@media (min-width: 769px) {
+    .specialValeur{
+        width: 28%;
+        padding: 0 1rem;
+        /*border: 2px solid red;*/
+    }
+    .blockValeur{
+        text-align: left;
+        padding-right: 3rem;
+        /*border: 2px solid navy;*/
+    }
+    .titleValeur{
+        text-align: left;
+        padding-bottom: 0.5rem;
+        /*border: 2px solid royalblue;*/
+    }
+}
+/* ************* équipe ************* */
+/* desktop */
+@media (min-width: 769px) {
+    .employer{
+        padding: 1rem 7rem;
+        /*border: 2px dashed purple;*/
+    }
+    .employerTexte{
+        padding: 0 2rem;
+    }
+    .colonneEmployer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*border: 2px solid rgb(20, 50, 105);*/
+    }
+    .droiteEmployer{
+        justify-content: left;
+        /*border: 2px solid green;*/
+    }
+
+    .gaucheEmployer{
+        justify-content: right;
+        /*border: 2px solid rgb(185, 86, 177);*/
+    }
+}
+
+.cardAgence{
+    width: 18rem;
+    height: 16rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 0;
+    /*border: 2px solid red;*/
+}
+
+.card-img-top{
+    height: 13rem;
+    border-radius: 0;
+    border: 1px solid var(--bg-dark-texte);
+    overflow: hidden; /* cache se qui déborde */
+    /*border: 2px solid rgb(231, 133, 22);*/
+}
+
+.cardAgence .card-text{
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*border: 2px solid darkred;*/
+}
+.cardAgence .card-body{
+    color: var(--bg-dark-texte);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-emploi); /* cache le bg d'origine */
+    /*border: 2px solid rgb(18, 190, 190);*/
+}
+
+/* ************* pourquoi nous************* */
+/* desktop */
+@media (min-width: 769px) {
+    .optionPourquoi{
+        padding: 0 6rem;
+        /*border: 2px solid orange;*/
+    }
+    .choix{
+        padding-left: 3rem;
+        /*border: 2px solid rebeccapurple;*/
+    }
+}
+.choix h3{
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0;
+    /*border: 2px solid greenyellow;*/
+}
+
+
+/* ************* rejoigner nous ************* */
+.offreEmploi{
+    padding: 1.5rem 0;
+    line-height: 1rem;
+    /*border: 2px solid #440032;*/
+}
+
+.offreEmploi button{
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 1rem 4rem;
+    background-color: var(--button-light-rose)
+    /*border: 2px solid aquamarine;*/
+}
+.spontanée{
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+.imgNous{
+    width: 100%;
+    max-height: 20rem;
+    border: 1px solid var(--bg-dark-texte);
+    /*border: 2px solid olivedrab;*/
+}
+
+.imgRejoind{
+    display: flex;
+    align-items: center;
+    /*border: 2px solid rgb(197, 151, 26);*/
+}
+.offres{
+    text-align: center;
+    /*border: 2px solid slateblue;*/
+}

@@ -1,0 +1,329 @@
+/* *************************************** charte graphique *********************************** */
+:root {
+    --bg-light: #898121;
+    --bg-dark-2: #ffffff;
+    --bg-dark-texte: black;
+    --button-light: #fda403;
+    --button-light-rose: #fda403;
+    --button-light-blue: #fda403;
+    --bg-2-light: #d9d9d9;
+    --bg-emploi: #ffffff;
+    --bs-btn-close-color-bg:black;
+  }
+  /* Dark Mode */
+  body.dark {
+    --bg-light: #440032;
+    --bg-dark-2: #000124;
+    --bg-dark-texte: #ffffff;
+    --button-light: #939598;
+    --button-light-rose: #440032;
+    --button-light-blue: #000124;
+    --bg-2-light: #939598;
+    --bg-emploi: #000124;
+    --bs-btn-close-color-bg:#ffffff;
+  
+  }
+  /* ******************************  navbarre ************************** */
+  
+  
+  /* Classe pour masquer le contenu jusqu'à ce que le thème soit appliqué */
+  .hide {
+    visibility: hidden; /* Masque le contenu */
+  }
+  
+  body.dark .hide {
+    visibility: visible; /* Affiche le contenu quand le mode sombre est activé */
+  }
+  
+  /* Appliquez une couleur de fond sombre immédiatement avant tout rendu */
+  body {
+    transition: none; /* Pas de transition immédiatement pour éviter des flashs */
+  }
+  
+  /* Ajoutez une transition fluide lorsque le mode est basculé */
+  body.dark {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  /* Transition pour les images */
+  img {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .contNav {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--bg-dark-2);
+    /*border: 5px solid green;*/
+  }
+  
+  #navbarNav{
+    display: flex;
+    justify-content: space-around;
+    /*border: 2px solid red;*/
+  }
+  
+  /* desktop */
+  @media (min-width: 769px){
+    .navigation{
+      padding: 0 3rem;
+      /*border: 2px solid red;*/
+    }
+  
+    .onglet{
+      width: 70%;
+      /*border: 2px solid  purple;*/
+    }
+  }
+  
+  /* taille du logo */
+  .logoComplet {
+    height: 4rem;
+    padding: 0.3rem;
+  }
+  
+  .navbar-nav {
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 2px solid blue;*/
+  }
+  .nav-link {
+    color: var(--bg-dark-texte);
+    font-size: 1.3rem;
+  }
+  
+  /*  ************************** dark mode ********************** */
+  body {
+    color: var(--bg-dark-texte);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .dark-mode-button {
+    background-color: var(--button-light);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 30px;
+  }
+  .dark-mode-button img {
+    width: 30px;
+    height: 30px;
+  }
+  .images img {
+    width: 100px;
+    height: 100px;
+    transition: opacity 0.3s;
+  }
+  /* ********************************  nav bouton dark/light ********************************************* */
+  /* Position du bouton de mode sombre en vue bureau */
+  .dark-mode-button {
+    margin-left: auto;
+    /* Pousse le bouton de mode sombre à droite en bureau */
+    order: 1;
+    border: none;
+  }
+  /* Centre les éléments du menu onglet */
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* bouton burger */
+  button.navbar-toggler {
+    background-color: var(--button-light-rose);
+  }
+  /* barre burger*/
+  .navbar-toggler-icon {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-dark-texte); 
+    background: transparent; 
+    border: none; 
+  }
+  
+  /*annule le boostrap effet au survol des liens */
+  .nav-link:focus, .nav-link:hover {
+    color: var(--bg-dark-texte);
+  }
+  
+  /* icon dark mode */
+  .fa-moon, .fa-sun {
+    font-size: 20px;
+    color: var(--bg-dark-texte);
+    background-color: var(--button-light);
+  }
+  
+  /* *************************** titres ************************************ */
+  h1 {
+    font-family: "Meow Script", cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+  }
+  
+  h2 {
+    font-family: gabriela;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+  
+  }
+  
+  h3 {
+    font-family: "Meow Script", cursive;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  
+  /* deskop */
+  @media (min-width: 769px){
+    h1{
+      font-size: 4.5rem;
+    }
+  
+    h2{
+      padding-top: 0;
+    }
+    
+    h3{
+      font-size: 1.8rem;
+    }
+  }
+   
+  /* ************************* autre éléments global ***************************** */
+  p {
+    font-family: cagliostro;
+    font-size: 1.2rem;
+  }
+  
+  button {
+    color: var(--bg-dark-texte);
+    background-color: var(--button-light);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    border: none;
+  }
+  
+  a {
+    color: var(--bg-dark-texte);
+    list-style: none;
+    text-decoration: none;
+  }
+  /* background des sections */
+  footer, .mention, .politique, .ajustement, .plan {
+    background-color: var(--bg-light);
+    margin: 0;
+    padding-top: 1rem;
+  }
+  .container-fluid {
+    width: 100%;
+    /*border: 2px solid blue;*/
+  }
+  span{
+    font-weight:600;
+  }
+  /* ********************* résaux sociaux ******************************** */
+  
+  .fa-brands{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--bg-2-light);
+  }
+  
+  .facebook{
+    padding: 1rem 1.2rem;
+    /*border: 2px solid firebrick;*/
+  }
+  
+  .speciauxFooter{
+    padding-top: 1rem;
+    /*border:2px solid red;*/
+  }
+  
+  .footerSpeciaux{
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* ****************************** Vue mobile (max 768px) - bouton à gauche du burger ************************************* */
+  @media (max-width: 768px) {
+    /* bouton burger */
+    .navbar-toggler {
+      order: 2;/* Le burger reste à droite en mobile */
+    }
+    .dark-mode-button {
+      order: 1;/* Le bouton de mode sombre reste à gauche du burger */
+      margin-right: 0.5rem;
+    }
+  
+    /* Centrer les onglets quand le menu est déployé */
+    .collapse.navbar-collapse {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      text-align: center;
+      border: 2px solid green;
+    }
+    
+    /* menu burger */
+    .navbar-collapse {
+      background-color: var(--bg-light); 
+      position: fixed; 
+      top: 0;
+      left: 0; 
+      width: 100%; 
+      height: 100vh; /* Prendre toute la hauteur de l'écran */
+      display: flex;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      z-index: 1; 
+      opacity: 0; /* Cacher initialement le menu */
+      pointer-events: none; /* Désactiver les interactions avant l'ouverture */
+      transition: opacity 0.4s ease; /* Transition l'ouverture */
+        /*border: 2px solid green;*/
+    }
+    /* Quand le menu est ouvert, on le rend visible */
+    .navbar-collapse.show {
+        opacity: 1; /* Afficher le menu */
+        pointer-events: all; /* Activer les interactions */
+        /*border: 2px solid blue;*/
+    }
+  
+    /* style des liens */
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 2rem 0;
+        color:var(--bg-dark-texte);
+        /*border: 2px dashed purple;*/
+    }
+    
+    /* Effet au survol des liens */
+    .nav-link:hover {
+      color: var(--button-light);
+    }
+  
+    /* ************************************************** footer ********************************** */
+    .footerBis{
+      text-align: center;
+      /*border: 2px solid slateblue;*/
+    }
+    .footerTexte{
+      margin: 1rem 0;
+    }
+  }
