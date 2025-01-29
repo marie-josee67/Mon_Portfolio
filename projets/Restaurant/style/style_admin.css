@@ -1,13 +1,7 @@
-@import url("style_panier.css");
+@import url("./style_panier.css");
 
 .adminForm{
     transform: translateY(100px);
-}
-
-#main{
-
-
-    
 }
 
 .row{
