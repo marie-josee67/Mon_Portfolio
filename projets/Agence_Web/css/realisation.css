@@ -1,0 +1,144 @@
+/* ************* bg sections ************* */
+.realisation{
+    background-color: var(--bg-light);
+    padding: 1rem 2rem;
+}
+
+.reaProjet{
+    background-color: var(--bg-dark-2);
+    padding: 1rem 2rem;
+}
+
+/* *************** réalisations *************** */
+.vignette{
+    width: 100%;
+    padding: 1rem 0;
+    /*border: 2px solid rgb(197, 151, 26);*/
+}
+
+.carteRea{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    border: 1px solid black; /* coutour card */
+    border-radius: 10px;
+    /*border: 2px solid green;*/
+}
+
+.projet{
+    text-align: center;
+    padding: 1.5rem 0;
+    /*border: 2px solid purple;*/
+}
+
+.card-img{
+    width: 100%;
+    height: 18rem;
+    margin: 0;
+    padding:0;
+    object-fit: cover;
+    border-radius:10px  10px 0 0;
+    /*border: 2px solid red;*/
+}
+
+/* desktop */
+@media (min-width: 769px){
+    .projet{
+        padding: 0.6rem;
+        /*border: 2px solid red;*/
+    }
+
+    .card-img{
+        height: 18rem;
+        /*border:2px dashed rgb(229, 202, 32);*/
+    }
+}
+
+.card-body{
+    height: 3.3rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border:2px solid forestgreen;*/
+}
+
+.card-title{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   /* border: 2px solid blue;*/
+}
+
+/* modal */
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    /*border:2px dashed turquoise;*/
+}
+/*modal boutton retour*/
+.btnClose{
+    border-radius: 0.5rem;
+    background-color: var(--button-light-blue);
+    /*border:2px solid goldenrod;*/
+}
+/* retire de la card le bg */
+.realisation .buttonProjet{
+    background: none;
+}
+
+
+/* fiche descriptif de projet */
+.tailleFenetre{
+    background: var(--bg-light);
+    text-align: left;
+    /*border: 2px solid rgb(30, 255, 0);*/
+}
+
+svg.date{
+    color: var(--bg-dark-texte);
+}
+
+/* pour que les image dépasse pas */
+.modalImg{
+    width: 100%;
+}
+
+/* retrait du fond boostrap */
+.buttonProjet{
+    background: none;
+    border: none;
+}
+
+/* desktop */
+@media (min-width: 769px){
+    .projetRealisation{
+        padding:0 6rem;
+        /*border: 2px solid rgb(131, 25, 163);*/
+    }
+    
+}
+
+.calendrier{
+    padding-top: 1rem;
+    /*border:2px solid teal;*/
+}
+
+.fa-calendar{
+    font-size: 1.8rem;
+    /*border: 2px solid royalblue;*/
+}
+/* ****************** Projet ******************* */
+
+.speProjet{
+    font-size: 1.6rem;
+    /*border: 2px solid sandybrown;*/
+}
+
+/* desktop */
+@media (min-width: 769px){
+    .speProjet{
+        font-size: 2rem;
+    }
+}

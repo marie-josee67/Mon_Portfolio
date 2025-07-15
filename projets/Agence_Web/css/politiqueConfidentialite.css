@@ -1,0 +1,13 @@
+#navbarNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* desktop */
+@media (min-width: 769px){
+    #navbarNav{
+        justify-content: space-around;
+    }
+}

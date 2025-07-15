@@ -1,0 +1,53 @@
+@import url("./style_panier.css");
+
+.adminForm{
+    transform: translateY(100px);
+}
+
+.row{
+    display: flex;
+    margin-left: 20px;
+    padding: 10px;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow:
+        3.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+        9.6px 12.5px 10px rgba(0, 0, 0, 0.035),
+        23.2px 30.1px 24.1px rgba(0, 0, 0, 0.046),
+        77px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+
+.row:nth-child(1){
+    justify-content: center;
+    background-color: var(--clr-nav);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.row:nth-child(3){
+    height: 100px;
+}
+.row:nth-child(5){
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.input-file {
+    display: none;
+}
+
+.menu{
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.imageMenu{
+    width: 200px;
+}
+
+
+.bouton3{
+    width: 400px;
+}
