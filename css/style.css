@@ -10,15 +10,15 @@
     --white-2:#858484;
     --white-bg-nav: rgba(240, 248, 255, 0.495);
     --white-bg-1:#0082b7;
-    --white-bg-2:linear-gradient(to left top, #1f368b, #005ead, #0082b7, #00a1ad, #00be9a, #4cbe71, #7eba43, #aeb100, #d28c04, #e26335, #dc3f5d, #bc3381);
-    --white-bg-3: rgb(72, 155, 17);/* couleur de fond  */
+    --white-bg-2:linear-gradient(to left top, #4cbe71, #7eba43, #d28c04, #e26335);
+    --white-bg-3: rgb(213, 224, 233);/* couleur de fond  */
     --white-color-2:#aeb100;
-    --white-color-1:#e26335;
+    --white-color-1:#25201e;
     --white-color-3:#333;
     --white-color-4:#00be9a;
-    --white-color-5:#7eba43;
+    --white-color-5:rgb(213, 224, 233);
     --white-color-6:#d28c04;
-    --white-border-boutton: #bc3381;
+    --white-border-boutton: #35a53b;
     --white-border:white;
 } 
 
